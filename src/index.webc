@@ -1,0 +1,15 @@
+---
+title: New website
+layout: index
+---
+
+<div class="grid grid-cols-2 gap-10">
+  <section class="space-y-10">
+    <h1>Blog</h1>
+    <index-links :collection="$data.collections.blog"></index-links>
+  </section>
+  <section class="space-y-10">
+    <h1>Snippets</h1>
+    <index-links :collection="$data.collections.snippets"></index-links>
+  </section>
+</div>

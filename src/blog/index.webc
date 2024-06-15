@@ -1,0 +1,9 @@
+---
+layout: index
+eleventyExcludeFromCollections: blog
+---
+
+<section class="space-y-10">
+  <h1>Blogs</h1>
+  <index-links :collection="$data.collections.blog"></index-links>
+</section>

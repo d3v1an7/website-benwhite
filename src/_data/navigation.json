@@ -1,0 +1,8 @@
+{
+  "header": [
+    { "title": "about", "path": "/about" },
+    { "title": "blog", "path": "/blog" },
+    { "title": "snippets", "path": "/snippets" }
+  ],
+  "footer": [{ "icon": "github", "url": "https://github.com/d3v1an7/" }]
+}

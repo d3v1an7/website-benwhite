@@ -1,0 +1,9 @@
+---
+layout: page
+permalink: '404.html'
+title: Page not found
+eleventyExcludeFromCollections: true
+nofollow: true
+---
+
+<a href="/">back to homepage</a>

@@ -1,0 +1,22 @@
+---
+layout: base
+---
+
+<site-header></site-header>
+<main>
+  <article
+    id="content"
+    class="wrapper padding-x padding-y width-reading flex-grow">
+    <header>
+      <h1
+        webc:if="title"
+        @text="title"
+        class="mb-1"></h1>
+      <widget-datetime :date="date"></widget-datetime>
+    </header>
+    <template
+      webc:nokeep
+      @html="content"></template>
+  </article>
+</main>
+<site-footer></site-footer>

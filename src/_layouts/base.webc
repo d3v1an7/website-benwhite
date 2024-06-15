@@ -1,0 +1,29 @@
+<!doctype html>
+<html
+  lang="en"
+  class="dark scroll-smooth">
+  <head>
+    <link
+      webc:keep
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500,700&family=JetBrains+Mono&display=swap" />
+    <link
+      webc:keep
+      rel="stylesheet"
+      href="/style.css" />
+    <template
+      webc:is="head-emoji-favicon"
+      @emoji="✨"></template>
+  </head>
+  <body
+    class="flex min-h-screen w-full flex-col bg-stone-100 dark:bg-stone-900">
+    <a
+      href="#content"
+      class="focus-state sr-only left-1/2 top-1.5 z-40 -translate-x-1/2 bg-stone-100 focus:not-sr-only focus:absolute focus:p-1.5 dark:bg-stone-900 sm:top-2">
+      skip to content
+    </a>
+    <template
+      webc:nokeep
+      @html="content"></template>
+  </body>
+</html>

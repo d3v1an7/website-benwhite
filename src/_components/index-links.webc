@@ -1,0 +1,13 @@
+<section class="space-y-8">
+  <article webc:for="item of collection">
+    <h3>
+      <a
+        :href="item.page.url"
+        @text="item.data.title"></a>
+    </h3>
+    <widget-datetime :date="item.page.date"></widget-datetime>
+    <p
+      webc:if="item.data.standfirst"
+      @text="item.data.standfirst"></p>
+  </article>
+</section>

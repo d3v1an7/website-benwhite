@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .wrapper {
+    @apply mx-auto w-full;
+  }
+  .padding-x {
+    @apply px-6;
+    @apply sm:px-8;
+  }
+  .padding-y {
+    @apply py-12;
+    @apply sm:py-16;
+  }
+  .width-site {
+    @apply max-w-7xl;
+  }
+  .width-reading {
+    @apply max-w-3xl;
+  }
+}
+
+@layer components {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-sans text-2xl font-bold uppercase text-stone-900 dark:text-stone-50;
+  }
+  time {
+    @apply font-sans text-sm uppercase tracking-wide text-stone-600 dark:text-stone-300;
+  }
+  body {
+    @apply font-mono text-xl/relaxed lining-nums text-stone-800 dark:text-stone-200;
+  }
+  hr {
+    @apply my-8 h-px border-0 bg-stone-400;
+  }
+  #content p {
+    @apply mb-10;
+  }
+  #content ul {
+    @apply list-disc;
+  }
+  #content ol {
+    @apply list-decimal;
+  }
+  #content li {
+    @apply mb-5;
+  }
+  #content a {
+    @apply link-underline;
+    @apply focus-state;
+  }
+  .link-underline {
+    @apply hover:link-underline-hover underline decoration-1 underline-offset-4;
+  }
+  .link-underline-hover {
+    @apply hover:underline hover:decoration-violet-600 hover:decoration-4 hover:underline-offset-4;
+  }
+  .btn {
+    @apply inline-flex touch-manipulation select-none items-center justify-center rounded-md px-5 py-3 text-base transition duration-150 ease-in-out;
+    @apply focus-state;
+  }
+  .focus-state {
+    @apply focus:outline-none focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-violet-600;
+  }
+
+  nav.breadcrumbs ol,
+  nav.menu ol {
+    @apply flex flex-row;
+  }
+  nav.breadcrumbs li a,
+  nav.menu li a {
+    @apply px-3 py-1 hover:text-violet-600 dark:hover:text-violet-400;
+    @apply focus-state;
+  }
+  nav.breadcrumbs li::after {
+    @apply px-1 content-['/'] last:content-none dark:text-stone-400;
+  }
+}
+@layer utilities {
+  ::selection {
+    @apply bg-violet-200 dark:bg-violet-400;
+  }
+}
