@@ -14,6 +14,7 @@
 - [ ] 404
 - [ ] SEO
 - [ ] RSS
+- [ ] Search
 - [ ] Actual content
 
 ## Stack
