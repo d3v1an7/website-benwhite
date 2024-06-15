@@ -1,4 +1,4 @@
-# website
+# website-benwhite
 
 ## WIP
 
@@ -25,7 +25,7 @@
 
 ## Build
 
-Changes to the `main` branch will kick off a build and deploy to `https://benwhite.com.au/`.
+Changes to the `main` branch will kick off a build and deploy to [benwhite.com.au](https://benwhite.com.au/).
 
 ## Local development
 
