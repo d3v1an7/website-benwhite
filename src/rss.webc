@@ -6,9 +6,8 @@ layout: index
 <section class="flex flex-col space-y-6">
   <h1>Subscribe</h1>
   <ul>
-    <li><a href="#">Everything</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Blog</a></li>
-    <li><a href="#">Snippets</a></li>
+    <li><a href="/rss/about.xml">About</a></li>
+    <li><a href="/rss/blog.xml">Blog</a></li>
+    <li><a href="/rss/snippets.xml">Snippets</a></li>
   </ul>
 </section>

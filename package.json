@@ -21,6 +21,7 @@
   "dependencies": {
     "@11ty/eleventy": "3.0.0-alpha.13",
     "@11ty/eleventy-plugin-bundle": "^2.0.2",
+    "@11ty/eleventy-plugin-rss": "^2.0.0",
     "@11ty/eleventy-plugin-webc": "^0.11.2",
     "@formkit/tempo": "^0.1.1",
     "esbuild": "^0.21.5",

@@ -9,17 +9,19 @@
 - [x] Dark mode toggle
 - [x] Settle on a naming convention for components
 - [x] 404
+- [x] Tidy 11ty config
+- [x] RSS
+- [ ] Sitemap
 - [ ] Small breakpoint styling/menu
 - [ ] Cachebusting strat for css
-- [ ] Tidy 11ty config
 - [ ] Build pipeline
 - [ ] SEO/head tags
-- [ ] RSS
 - [ ] Actual content
 
 ## Later
 
 - [ ] Search
+- [ ] Full site feed
 
 ## Stack
 

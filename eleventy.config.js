@@ -1,83 +1,29 @@
-import { minify } from 'html-minifier-terser';
-import markdownIt from 'markdown-it';
-import webc from '@11ty/eleventy-plugin-webc';
 import bundlerPlugin from '@11ty/eleventy-plugin-bundle';
-import { format } from '@formkit/tempo';
-import esbuild from 'esbuild';
+import { feedPlugin } from '@11ty/eleventy-plugin-rss';
+import webc from '@11ty/eleventy-plugin-webc';
+import { configFeeds } from './config/feeds.js';
+import { configFilters } from './config/filters.js';
+import { configPlugins } from './config/plugins.js';
+import { configTransforms } from './config/transforms.js';
 export default async function (eleventyConfig) {
-  eleventyConfig.addFilter('dateShort', function (date) {
-    return format(date, 'YYYY-MM-DD');
+  // BUG: https://github.com/11ty/eleventy-plugin-rss/issues/50
+  eleventyConfig.addFilter('head', (arr, num) => {
+    return num ? arr.slice(0, num) : arr;
   });
-  eleventyConfig.addFilter('dateLong', function (date) {
-    return format(date, 'D MMMM YYYY');
-  });
-  eleventyConfig.addFilter('filterBreadcrumbs', function (path) {
-    const pathArray = path
-      .split('/')
-      .filter((segment) => segment && segment !== 'index');
-    return pathArray.map((segment, index, array) => ({
-      title: segment,
-      path: `/${array.slice(0, index + 1).join('/')}`,
-    }));
-  });
+  eleventyConfig.addPlugin(feedPlugin, configFeeds.about);
+  eleventyConfig.addPlugin(feedPlugin, configFeeds.blog);
+  eleventyConfig.addPlugin(feedPlugin, configFeeds.snippets);
+  eleventyConfig.addFilter('dateShort', configFilters.dateShort);
+  eleventyConfig.addFilter('dateLong', configFilters.dateLong);
+  eleventyConfig.addFilter('makeBreadcrumbs', configFilters.makeBreadcrumbs);
   eleventyConfig.addLayoutAlias('base', 'base.webc');
   eleventyConfig.addLayoutAlias('home', 'index.webc');
   eleventyConfig.addLayoutAlias('page', 'page.webc');
-  eleventyConfig.setServerOptions({
-    watch: ['_site/**/*.css'],
-  });
-  eleventyConfig.addPassthroughCopy({
-    './public/': '/',
-  });
-  eleventyConfig.addPlugin(webc, {
-    components: './src/_components/**/*.webc',
-  });
-  // Add esbuild transform to WebC bundler.
-  // This allows us to write nice, sane code within inline <script> tags that can use imports.
-  // The transform also ensures the code will also be minified and made compatible for older browsers.
-  eleventyConfig.addPlugin(bundlerPlugin, {
-    toFileDirectory: 'js/bundle',
-    transforms: [
-      async function (code) {
-        if (this.type === 'js') {
-          const bundledCode = await esbuild.build({
-            stdin: {
-              contents: code,
-              resolveDir: './src',
-            },
-            bundle: true,
-            minify: true,
-            target: 'es2017',
-            write: false,
-          });
-          return bundledCode.outputFiles[0].text;
-        }
-        return code;
-      },
-    ],
-  });
-  const markdownLibrary = markdownIt({
-    html: true,
-    breaks: true,
-    linkify: true,
-  });
-  eleventyConfig.setLibrary('md', markdownLibrary);
-  eleventyConfig.addTransform('minify', async function (content) {
-    if (
-      (this.outputPath && this.outputPath.split('.').pop() === 'html') ||
-      (!this.outputPath && this.page.outputFileExtension === 'html')
-    ) {
-      const minifyOptions = {
-        collapseWhitespace: true,
-        conservativeCollapse: true,
-        preserveLineBreaks: true,
-        removeComments: true,
-      };
-      return minify(content, minifyOptions);
-    } else {
-      return content;
-    }
-  });
+  eleventyConfig.setServerOptions({ watch: ['_site/**/*.css'] });
+  eleventyConfig.addPassthroughCopy({ './public/': '/' });
+  eleventyConfig.addPlugin(webc, configPlugins.webc);
+  eleventyConfig.addPlugin(bundlerPlugin, configPlugins.bundler);
+  eleventyConfig.addTransform('minifyHtml', configTransforms.minifyHtml);
   return {
     dir: {
       input: 'src',
