@@ -2,13 +2,18 @@
 layout: index
 ---
 
-<div class="grid gap-10 sm:grid-cols-2">
-  <section class="space-y-6">
+<section class="space-y-16">
+  <h1>Hello</h1>
+  <p>Welcome, etc.</p>
+</section>
+<hr class="my-20" />
+<div class="grid gap-8 md:grid-cols-2">
+  <section class="space-y-16">
     <h1>Blog</h1>
     <section-index-links
       :collection="$data.collections.blog"></section-index-links>
   </section>
-  <section class="space-y-6">
+  <section class="space-y-16">
     <h1>Snippets</h1>
     <section-index-links
       :collection="$data.collections.snippets"></section-index-links>

@@ -11,11 +11,11 @@
 - [x] 404
 - [x] Tidy 11ty config
 - [x] RSS
+- [x] Small breakpoint styling/menu
 - [ ] Sitemap
-- [ ] Small breakpoint styling/menu
 - [ ] Cachebusting strat for css
-- [ ] Build pipeline
 - [ ] SEO/head tags
+- [ ] Build pipeline
 - [ ] Actual content
 
 ## Later

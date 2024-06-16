@@ -3,7 +3,8 @@
     <h3>
       <a
         :href="item.page.url"
-        @text="item.data.title"></a>
+        @text="item.data.title"
+        class="link-underline-hover"></a>
     </h3>
     <time-formatted :date="item.page.date"></time-formatted>
     <p

@@ -26,9 +26,15 @@
       skip to content
     </a>
     <header
-      class="wrapper padding-x width-site mt-6 flex flex-row justify-between text-sm">
-      <nav-breadcrumbs></nav-breadcrumbs>
-      <nav-menu></nav-menu>
+      class="wrapper padding-x width-site mt-6 flex flex-col space-y-8 text-sm">
+      <section class="flex flex-row justify-between">
+        <nav-breadcrumbs></nav-breadcrumbs>
+        <section class="flex flex-row space-x-6">
+          <nav-menu class="hidden md:block"></nav-menu>
+          <button-darkmode></button-darkmode>
+        </section>
+      </section>
+      <nav-menu class="md:hidden"></nav-menu>
     </header>
     <template
       webc:nokeep

@@ -6,7 +6,7 @@ layout: base
   id="content"
   class="wrapper padding-x padding-y width-reading flex-grow">
   <article>
-    <header>
+    <header class="mb-10">
       <h1
         webc:if="title"
         @text="title"

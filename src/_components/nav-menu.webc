@@ -1,10 +1,10 @@
 <nav
   class="menu"
-  aria-label="menu">
+  aria-label="menu"
+  webc:root="override">
   <ol class="items-center">
     <!-- NOTE: Disabling prettier for navigation items as the whitespace in the HTML will jank up the spacing. -->
     <!-- prettier-ignore -->
     <li webc:for="item of $data.navigation.header"><a :href="item.path" @text="item.title"></a></li>
-    <li class="ml-6"><button-darkmode></button-darkmode></li>
   </ol>
 </nav>

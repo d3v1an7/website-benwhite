@@ -31,13 +31,16 @@
   h4,
   h5,
   h6 {
-    @apply font-sans text-2xl font-bold uppercase text-stone-900 dark:text-stone-50;
+    @apply font-sans text-xl font-bold uppercase text-stone-900 sm:text-2xl dark:text-stone-50;
+  }
+  h1 {
+    @apply text-6xl sm:text-7xl;
   }
   time {
-    @apply font-sans text-sm uppercase tracking-wide text-stone-600 dark:text-stone-300;
+    @apply font-sans text-sm uppercase tracking-wider text-stone-600 dark:text-stone-300;
   }
   body {
-    @apply font-mono text-xl/relaxed lining-nums text-stone-800 dark:text-stone-200;
+    @apply font-mono text-lg/relaxed lining-nums text-stone-800 sm:text-xl/relaxed dark:text-stone-200;
   }
   hr {
     @apply my-8 h-px border-0 bg-stone-400;
@@ -48,6 +51,9 @@
   #content p {
     @apply mb-10;
   }
+  #content p.standfirst {
+    @apply text-2xl;
+  }
   #content ul {
     @apply list-disc;
   }
@@ -55,9 +61,9 @@
     @apply list-decimal;
   }
   #content li {
-    @apply mb-5;
+    @apply mb-3 ml-5;
   }
-  #content a {
+  #content > article a {
     @apply link-underline;
     @apply focus-state;
   }
@@ -75,17 +81,23 @@
     @apply focus-state;
   }
   nav ol {
-    @apply flex flex-row;
+    @apply flex min-h-6 flex-row items-center;
   }
   nav li a {
-    @apply link-hover px-3 py-1;
+    @apply link-hover h-6 px-1.5 py-1 leading-6;
     @apply focus-state;
   }
-  nav.social li a {
-    @apply px-1.5;
+  nav.menu li:first-child a {
+    @apply pl-0;
+  }
+  nav.menu li a {
+    @apply px-3;
+  }
+  nav.breadcrumbs li:first-child a {
+    @apply inline-block py-0 pl-0;
   }
   nav.breadcrumbs li::after {
-    @apply px-1 content-['/'] last:content-none dark:text-stone-400;
+    @apply hidden px-1 content-['/'] first:inline-block last:hidden sm:inline-block dark:text-stone-400;
   }
   #theme-toggle[aria-checked='false'] #toggle-indicator {
     @apply translate-x-0;
@@ -97,6 +109,7 @@
     @apply transition duration-200 ease-in-out;
   }
 }
+
 @layer utilities {
   ::selection {
     @apply bg-violet-200 dark:bg-violet-400;
