@@ -1,8 +1,9 @@
 import { minify } from 'html-minifier-terser';
 import markdownIt from 'markdown-it';
 import webc from '@11ty/eleventy-plugin-webc';
+import bundlerPlugin from '@11ty/eleventy-plugin-bundle';
 import { format } from '@formkit/tempo';
-
+import esbuild from 'esbuild';
 export default async function (eleventyConfig) {
   eleventyConfig.addFilter('dateShort', function (date) {
     return format(date, 'YYYY-MM-DD');
@@ -30,6 +31,30 @@ export default async function (eleventyConfig) {
   });
   eleventyConfig.addPlugin(webc, {
     components: './src/_components/**/*.webc',
+  });
+  // Add esbuild transform to WebC bundler.
+  // This allows us to write nice, sane code within inline <script> tags that can use imports.
+  // The transform also ensures the code will also be minified and made compatible for older browsers.
+  eleventyConfig.addPlugin(bundlerPlugin, {
+    toFileDirectory: 'js/bundle',
+    transforms: [
+      async function (code) {
+        if (this.type === 'js') {
+          const bundledCode = await esbuild.build({
+            stdin: {
+              contents: code,
+              resolveDir: './src',
+            },
+            bundle: true,
+            minify: true,
+            target: 'es2017',
+            write: false,
+          });
+          return bundledCode.outputFiles[0].text;
+        }
+        return code;
+      },
+    ],
   });
   const markdownLibrary = markdownIt({
     html: true,

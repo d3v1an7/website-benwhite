@@ -2,8 +2,11 @@
   "header": [
     { "title": "about", "path": "/about" },
     { "title": "blog", "path": "/blog" },
-    { "title": "snippets", "path": "/snippets" },
-    { "title": "search", "path": "/search" }
+    { "title": "snippets", "path": "/snippets" }
   ],
-  "footer": [{ "icon": "github", "url": "https://github.com/d3v1an7/" }]
+  "footer": [
+    { "title": "github", "url": "https://github.com/d3v1an7/" },
+    { "title": "mastodon", "url": "https://infosec.exchange/@d3v1an7" },
+    { "title": "rss", "url": "/rss/" }
+  ]
 }

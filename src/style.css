@@ -42,6 +42,9 @@
   hr {
     @apply my-8 h-px border-0 bg-stone-400;
   }
+  svg {
+    @apply pointer-events-none inline-block;
+  }
   #content p {
     @apply mb-10;
   }
@@ -64,29 +67,41 @@
   .link-underline-hover {
     @apply hover:underline hover:decoration-violet-600 hover:decoration-4 hover:underline-offset-4;
   }
+  .link-hover {
+    @apply hover:text-violet-600 dark:hover:text-violet-400;
+  }
   .btn {
     @apply inline-flex touch-manipulation select-none items-center justify-center rounded-md px-5 py-3 text-base transition duration-150 ease-in-out;
     @apply focus-state;
   }
-  .focus-state {
-    @apply focus:outline-none focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-violet-600;
-  }
-
-  nav.breadcrumbs ol,
-  nav.menu ol {
+  nav ol {
     @apply flex flex-row;
   }
-  nav.breadcrumbs li a,
-  nav.menu li a {
-    @apply px-3 py-1 hover:text-violet-600 dark:hover:text-violet-400;
+  nav li a {
+    @apply link-hover px-3 py-1;
     @apply focus-state;
+  }
+  nav.social li a {
+    @apply px-1.5;
   }
   nav.breadcrumbs li::after {
     @apply px-1 content-['/'] last:content-none dark:text-stone-400;
+  }
+  #theme-toggle[aria-checked='false'] #toggle-indicator {
+    @apply translate-x-0;
+  }
+  #theme-toggle[aria-checked='true'] #toggle-indicator {
+    @apply translate-x-6;
+  }
+  .toggle-ready {
+    @apply transition duration-200 ease-in-out;
   }
 }
 @layer utilities {
   ::selection {
     @apply bg-violet-200 dark:bg-violet-400;
+  }
+  .focus-state {
+    @apply focus:outline-none focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-violet-600;
   }
 }

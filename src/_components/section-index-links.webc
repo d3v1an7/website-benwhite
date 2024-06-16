@@ -5,7 +5,7 @@
         :href="item.page.url"
         @text="item.data.title"></a>
     </h3>
-    <widget-datetime :date="item.page.date"></widget-datetime>
+    <time-formatted :date="item.page.date"></time-formatted>
     <p
       webc:if="item.data.standfirst"
       @text="item.data.standfirst"></p>

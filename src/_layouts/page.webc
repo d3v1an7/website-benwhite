@@ -2,21 +2,19 @@
 layout: base
 ---
 
-<site-header></site-header>
-<main>
-  <article
-    id="content"
-    class="wrapper padding-x padding-y width-reading flex-grow">
+<main
+  id="content"
+  class="wrapper padding-x padding-y width-reading flex-grow">
+  <article>
     <header>
       <h1
         webc:if="title"
         @text="title"
         class="mb-1"></h1>
-      <widget-datetime :date="date"></widget-datetime>
+      <time-formatted :date="date"></time-formatted>
     </header>
     <template
       webc:nokeep
       @html="content"></template>
   </article>
 </main>
-<site-footer></site-footer>

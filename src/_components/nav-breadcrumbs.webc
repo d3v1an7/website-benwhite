@@ -1,0 +1,11 @@
+<nav
+  class="breadcrumbs"
+  aria-label="breadcrumbs">
+  <ol>
+    <!-- NOTE: Disabling prettier for navigation items as the whitespace in the HTML will jank up the spacing. -->
+    <!-- prettier-ignore -->
+    <li><a title="home" href="/">~</a></li>
+    <!-- prettier-ignore -->
+    <li webc:for="item of filterBreadcrumbs($data.page.filePathStem)"><a :href="item.path" @text="item.title"></a></li>
+  </ol>
+</nav>

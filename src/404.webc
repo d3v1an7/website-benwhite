@@ -1,9 +1,12 @@
 ---
-layout: page
+layout: index
 permalink: '404.html'
 title: Page not found
 eleventyExcludeFromCollections: true
 nofollow: true
 ---
 
-<a href="/">back to homepage</a>
+<section class="flex flex-col space-y-6">
+  <h1>404</h1>
+  <a href="/">Back to homepage</a>
+</section>

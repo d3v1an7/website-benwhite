@@ -2,7 +2,6 @@
 layout: base
 ---
 
-<site-header></site-header>
 <main
   id="content"
   class="wrapper padding-x padding-y width-site flex-grow">
@@ -10,4 +9,3 @@ layout: base
     webc:nokeep
     @html="content"></template>
 </main>
-<site-footer></site-footer>

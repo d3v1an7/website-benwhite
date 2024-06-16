@@ -5,5 +5,6 @@ eleventyExcludeFromCollections: blog
 
 <section class="space-y-10">
   <h1>Blogs</h1>
-  <index-links :collection="$data.collections.blog"></index-links>
+  <section-index-links
+    :collection="$data.collections.blog"></section-index-links>
 </section>

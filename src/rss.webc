@@ -1,0 +1,14 @@
+---
+title: RSS
+layout: index
+---
+
+<section class="flex flex-col space-y-6">
+  <h1>Subscribe</h1>
+  <ul>
+    <li><a href="#">Everything</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Snippets</a></li>
+  </ul>
+</section>

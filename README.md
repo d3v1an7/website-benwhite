@@ -5,17 +5,21 @@
 - [x] Indexes
 - [x] Beadcrumbs
 - [x] Header nav
-- [ ] Footer nav
+- [x] Footer nav
+- [x] Dark mode toggle
+- [x] Settle on a naming convention for components
+- [x] 404
+- [ ] Small breakpoint styling/menu
 - [ ] Cachebusting strat for css
-- [ ] Dark mode toggle (web component?)
 - [ ] Tidy 11ty config
-- [ ] Settle on a naming convention for components
 - [ ] Build pipeline
-- [ ] 404
-- [ ] SEO
+- [ ] SEO/head tags
 - [ ] RSS
-- [ ] Search
 - [ ] Actual content
+
+## Later
+
+- [ ] Search
 
 ## Stack
 
