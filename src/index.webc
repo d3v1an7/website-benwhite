@@ -2,9 +2,27 @@
 layout: index
 ---
 
-<section class="space-y-16">
-  <h1>Hello</h1>
-  <p>Welcome, etc.</p>
+<section>
+  <!-- It'd be neat to use <template webc:type="11ty" 11ty:type="njk,md"> here so we can use markdown for the copy, but I can't get it to play nice with Prettier yet. -->
+  <h1 class="mb-12">Hello</h1>
+  <p class="standfirst">
+    I like making things for the web, in high trust environments, with talented
+    people who give a shit.
+  </p>
+  <p>
+    I have been working in Australian media for about
+    <template
+      webc:nokeep
+      @text="yearsSince('2011-10-01')"></template>
+    years, across a mix of hands-on engineering, management and leadership. I
+    have found my happy place at
+    <a
+      class="link-underline"
+      href="https://www.capitalbrief.com/">
+      capitalbrief.com</a
+    >, and when I'm not gardening that codebase, I'll be out for a day hike, or
+    being bad at videogames.
+  </p>
 </section>
 <hr class="my-20" />
 <div class="grid gap-8 md:grid-cols-2">

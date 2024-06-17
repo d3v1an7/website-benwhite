@@ -1,4 +1,4 @@
-import { format } from '@formkit/tempo';
+import { format, diffYears } from '@formkit/tempo';
 
 export const configFilters = {
   dateShort(dateString) {
@@ -6,6 +6,9 @@ export const configFilters = {
   },
   dateLong(dateString) {
     return format(dateString, 'D MMMM YYYY');
+  },
+  yearsSince(dateString) {
+    return diffYears(new Date(), new Date(dateString));
   },
   makeBreadcrumbs(pathString) {
     const pathArray = pathString

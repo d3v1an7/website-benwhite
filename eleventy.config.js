@@ -15,6 +15,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(feedPlugin, configFeeds.snippets);
   eleventyConfig.addFilter('dateShort', configFilters.dateShort);
   eleventyConfig.addFilter('dateLong', configFilters.dateLong);
+  eleventyConfig.addFilter('yearsSince', configFilters.yearsSince);
   eleventyConfig.addFilter('makeBreadcrumbs', configFilters.makeBreadcrumbs);
   eleventyConfig.addLayoutAlias('base', 'base.webc');
   eleventyConfig.addLayoutAlias('home', 'index.webc');
