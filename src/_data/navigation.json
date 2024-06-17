@@ -6,6 +6,7 @@
   ],
   "footer": [
     { "title": "github", "url": "https://github.com/d3v1an7/" },
+    { "title": "twitch", "url": "https://www.twitch.tv/d3v1an7/" },
     { "title": "mastodon", "url": "https://infosec.exchange/@d3v1an7" },
     { "title": "rss", "url": "/rss/" }
   ]
