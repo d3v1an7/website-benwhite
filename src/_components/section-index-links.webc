@@ -1,14 +1,18 @@
 <section class="space-y-8">
-  <article webc:for="item of collection">
-    <h3>
-      <a
-        :href="item.page.url"
-        @text="item.data.title"
-        class="link-underline-hover"></a>
-    </h3>
-    <time-formatted :date="item.page.date"></time-formatted>
+  <article
+    class="summary"
+    webc:for="item of collection">
+    <header class="mb-2">
+      <h3>
+        <a
+          :href="item.page.url"
+          @text="item.data.title"
+          class="link-underline-hover"></a>
+      </h3>
+      <time-formatted :date="item.page.date"></time-formatted>
+    </header>
     <p
-      webc:if="item.data.standfirst"
+      webc:if="item.data.standfirst && standfirst"
       @text="item.data.standfirst"></p>
   </article>
 </section>

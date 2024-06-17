@@ -5,6 +5,7 @@ import { configFeeds } from './config/feeds.js';
 import { configFilters } from './config/filters.js';
 import { configPlugins } from './config/plugins.js';
 import { configTransforms } from './config/transforms.js';
+
 export default async function (eleventyConfig) {
   // BUG: https://github.com/11ty/eleventy-plugin-rss/issues/50
   eleventyConfig.addFilter('head', (arr, num) => {
@@ -17,14 +18,19 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter('dateLong', configFilters.dateLong);
   eleventyConfig.addFilter('yearsSince', configFilters.yearsSince);
   eleventyConfig.addFilter('makeBreadcrumbs', configFilters.makeBreadcrumbs);
+  eleventyConfig.addFilter('compileCss', configFilters.buildCss);
+  eleventyConfig.addWatchTarget('./src/style.css');
   eleventyConfig.addLayoutAlias('base', 'base.webc');
   eleventyConfig.addLayoutAlias('home', 'index.webc');
   eleventyConfig.addLayoutAlias('page', 'page.webc');
-  eleventyConfig.setServerOptions({ watch: ['_site/**/*.css'] });
   eleventyConfig.addPassthroughCopy({ './public/': '/' });
   eleventyConfig.addPlugin(webc, configPlugins.webc);
   eleventyConfig.addPlugin(bundlerPlugin, configPlugins.bundler);
   eleventyConfig.addTransform('minifyHtml', configTransforms.minifyHtml);
+  // BUG?: @html and @raw will convert entities when used in `<style>`.
+  eleventyConfig.addTransform('fixInlineStyle', async function (content) {
+    return content.replace(/&gt;/g, '>');
+  });
   return {
     dir: {
       input: 'src',

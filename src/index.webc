@@ -2,9 +2,9 @@
 layout: index
 ---
 
-<section>
+<section class="full">
   <!-- It'd be neat to use <template webc:type="11ty" 11ty:type="njk,md"> here so we can use markdown for the copy, but I can't get it to play nice with Prettier yet. -->
-  <h1 class="mb-12">Hello</h1>
+  <h1>Hello</h1>
   <p class="standfirst">
     I like making things for the web, in high trust environments, with talented
     people who give a shit.
@@ -26,12 +26,12 @@ layout: index
 </section>
 <hr class="my-20" />
 <div class="grid gap-8 md:grid-cols-2">
-  <section class="space-y-16">
+  <section class="space-y-10">
     <h1>Blog</h1>
     <section-index-links
       :collection="$data.collections.blog"></section-index-links>
   </section>
-  <section class="space-y-16">
+  <section class="space-y-10">
     <h1>Snippets</h1>
     <section-index-links
       :collection="$data.collections.snippets"></section-index-links>

@@ -8,7 +8,6 @@ export const configPlugins = {
   // This allows us to write nice, sane code within inline <script> tags that can use imports.
   // The transform also ensures JS code will also be minified and made compatible for older browsers.
   bundler: {
-    toFileDirectory: 'js/bundle',
     transforms: [
       async function (code) {
         if (this.type === 'js') {

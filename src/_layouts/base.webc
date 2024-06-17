@@ -7,10 +7,9 @@
       webc:keep
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500,700&family=JetBrains+Mono&display=swap" />
-    <link
+    <style
       webc:keep
-      rel="stylesheet"
-      href="/style.css" />
+      @html="compileCss('./src/style.css')"></style>
     <template
       webc:is="favicon-emoji"
       @emoji="✨"></template>

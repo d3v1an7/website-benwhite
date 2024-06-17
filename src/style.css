@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* NOTE: Changes to this file require a manual browser refresh for now. */
 
 @layer base {
   .wrapper {
@@ -20,7 +20,7 @@
     @apply max-w-7xl;
   }
   .width-reading {
-    @apply max-w-3xl;
+    @apply max-w-4xl;
   }
 }
 
@@ -48,22 +48,32 @@
   svg {
     @apply pointer-events-none inline-block;
   }
-  #content p {
+  .full h1,
+  .full h2,
+  .full h3,
+  .full h4,
+  .full h5,
+  .full h6,
+  .full p {
     @apply mb-10;
   }
-  #content p.standfirst {
+  .full header h1,
+  .summary h3 {
+    @apply mb-1;
+  }
+  .full p.standfirst {
     @apply text-2xl;
   }
-  #content ul {
+  .full ul {
     @apply list-disc;
   }
-  #content ol {
+  .full ol {
     @apply list-decimal;
   }
-  #content li {
+  .full li {
     @apply mb-3 ml-5;
   }
-  #content > article a {
+  .full a {
     @apply link-underline;
     @apply focus-state;
   }

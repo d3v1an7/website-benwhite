@@ -13,7 +13,7 @@
 - [x] RSS
 - [x] Small breakpoint styling/menu
 - [ ] Sitemap
-- [ ] Cachebusting strat for css
+- [x] Cachebusting strat for css
 - [ ] SEO/head tags
 - [ ] Build pipeline
 - [ ] Actual content

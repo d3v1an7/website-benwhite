@@ -5,12 +5,11 @@ layout: base
 <main
   id="content"
   class="wrapper padding-x padding-y width-reading flex-grow">
-  <article>
+  <article class="full">
     <header class="mb-10">
       <h1
         webc:if="title"
-        @text="title"
-        class="mb-1"></h1>
+        @text="title"></h1>
       <time-formatted :date="date"></time-formatted>
     </header>
     <template

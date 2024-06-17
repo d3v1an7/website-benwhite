@@ -6,5 +6,6 @@ eleventyExcludeFromCollections: snippets
 <section class="space-y-16">
   <h1>Snippets</h1>
   <section-index-links
-    :collection="$data.collections.snippets"></section-index-links>
+    :collection="$data.collections.snippets"
+    :standfirst="true"></section-index-links>
 </section>
