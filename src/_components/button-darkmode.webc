@@ -11,6 +11,7 @@
     </span>
     <svg-sun class="z-10 h-3 w-3 text-stone-50 dark:text-stone-300"></svg-sun>
     <svg-moon class="z-10 h-3 w-3 text-stone-600 dark:text-stone-50"></svg-moon>
+    <span class="sr-only">Toggle theme</span>
   </span>
 </button>
 <script webc:bucket="defer">

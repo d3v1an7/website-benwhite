@@ -3,7 +3,7 @@
     last update:
     <a
       :href="`https://github.com/d3v1an7/website-benwhite/commit/${process.env.CF_PAGES_COMMIT_SHA}`"
-      class="link-hover"
+      class="focus-state link-hover"
       target="_blank"
       @text="process.env.CF_PAGES_COMMIT_SHA.slice(0,6)"></a>
   </p>
@@ -11,7 +11,7 @@
     made with
     <a
       href="https://www.11ty.dev/"
-      class="link-hover"
+      class="focus-state link-hover"
       target="_blank"
       >11ty</a
     >

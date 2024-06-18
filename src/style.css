@@ -106,14 +106,18 @@
     @apply link-hover h-6 px-1.5 py-1 leading-6;
     @apply focus-state;
   }
-  nav.menu li:first-child a {
-    @apply pl-0;
-  }
   nav.menu li a {
     @apply px-3;
   }
+  nav.social li a {
+    @apply h-7;
+    @apply focus-state;
+  }
+  nav li svg {
+    @apply -mt-[2px] inline-block;
+  }
   nav.breadcrumbs li:first-child a {
-    @apply inline-block py-0 pl-0;
+    @apply -ml-1.5 inline-block py-0;
   }
   nav.breadcrumbs li::after {
     @apply hidden px-1 content-['/'] first:inline-block last:hidden sm:inline-block dark:text-stone-400;

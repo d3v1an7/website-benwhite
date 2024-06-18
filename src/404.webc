@@ -9,5 +9,11 @@ nofollow: true
 
 <section class="flex flex-col space-y-6">
   <h1>404</h1>
-  <a href="/">Back to homepage</a>
+  <p>
+    <a
+      href="/"
+      class="focus-state"
+      >Back to homepage</a
+    >
+  </p>
 </section>
