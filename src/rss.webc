@@ -1,11 +1,31 @@
 ---
-title: RSS
+title: Subscribe
+standfirst: Section based RSS feeds for this website.
 layout: index
 ---
 
-<section class="flex flex-col space-y-6">
-  <h1>Subscribe</h1>
+<section class="full width-reading space-y-10">
+  <h1 @text="title"></h1>
+  <blockquote
+    class="standfirst"
+    cite="https://www.wired.com/story/best-rss-feed-readers/">
+    <p>
+      “The internet is a mess. Ignore the algorithm, and distill the web down to
+      the things you actually care about.”
+    </p>
+    <footer>
+      —
+      <cite>
+        <a
+          href="https://www.wired.com/story/best-rss-feed-readers/"
+          target="_blank">
+          Scott Gilbertson</a
+        >
+      </cite>
+    </footer>
+  </blockquote>
   <ul>
+    <li><a href="/rss/everything.xml">Everything</a></li>
     <li><a href="/rss/about.xml">About</a></li>
     <li><a href="/rss/blog.xml">Blog</a></li>
     <li><a href="/rss/snippets.xml">Snippets</a></li>

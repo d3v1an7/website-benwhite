@@ -1,0 +1,10 @@
+---
+xmlHeader: '<?xml version="1.0" encoding="utf-8"?>'
+---
+
+<template
+  webc:nokeep
+  @raw="xmlHeader"></template>
+<template
+  webc:nokeep
+  @html="content"></template>

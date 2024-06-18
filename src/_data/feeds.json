@@ -1,0 +1,26 @@
+{
+  "everything": {
+    "collection": "everything",
+    "title": "Everything",
+    "rssTitle": "Ben White",
+    "description": "The feed with the lot."
+  },
+  "about": {
+    "collection": "about",
+    "title": "About",
+    "rssTitle": "Ben White — About",
+    "description": "Ben White, he/him, Australian."
+  },
+  "blog": {
+    "collection": "blog",
+    "title": "Blog",
+    "rssTitle": "Ben White — Blog",
+    "description": "Send me your address so I can visit you and explain my passions."
+  },
+  "snippets": {
+    "collection": "snippets",
+    "title": "Snippets",
+    "rssTitle": "Ben White — Snippets",
+    "description": "The bits and bobs that don't end up as blogs."
+  }
+}

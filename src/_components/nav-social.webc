@@ -4,6 +4,10 @@
   <ol class="items-center">
     <!-- NOTE: Disabling prettier for navigation items as the whitespace in the HTML will jank up the spacing. -->
     <!-- prettier-ignore -->
-    <li webc:for="item of $data.navigation.footer"><a :href="item.url" :title="item.title" :target="item.url.startsWith('/') ? '_blank' : '_self'"><template webc:nokeep @html="`<svg-${item.title}></svg-${item.title}>`"></template></a></li>
+    <li webc:for="item of $data.navigation.footer">
+      <a :href="item.url" :title="item.title" :target="item.url.startsWith('/') ? '_self' : '_blank'">
+        <template webc:nokeep @html="`<svg-${item.title}></svg-${item.title}>`"></template>
+      </a>
+    </li>
   </ol>
 </nav>

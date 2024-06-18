@@ -1,18 +1,7 @@
-const feedAbout = {
-  collection: 'about',
-  title: 'About',
-  description: 'About description.',
-};
-const feedBlog = {
-  collection: 'blog',
-  title: 'Blog',
-  description: 'Blog description.',
-};
-const feedSnippets = {
-  collection: 'snippets',
-  title: 'Snippets',
-  description: 'Snippets description.',
-};
+import fs from 'fs';
+
+const feeds = fs.readFileSync('./src/_data/feeds.json', 'utf8');
+const feedsJson = JSON.parse(feeds);
 const sharedMetadata = {
   language: 'en',
   base: 'https://benwhite.com.au/',
@@ -20,7 +9,7 @@ const sharedMetadata = {
     name: 'Ben White',
   },
 };
-const createFeedConfig = ({ collection, title, description }) => ({
+const createFeedConfig = ({ collection, rssTitle, description }) => ({
   type: 'atom',
   outputPath: `/rss/${collection}.xml`,
   collection: {
@@ -28,13 +17,14 @@ const createFeedConfig = ({ collection, title, description }) => ({
     limit: 0,
   },
   metadata: {
-    title,
+    title: rssTitle,
     subtitle: description,
     ...sharedMetadata,
   },
 });
 export const configFeeds = {
-  about: createFeedConfig(feedAbout),
-  blog: createFeedConfig(feedBlog),
-  snippets: createFeedConfig(feedSnippets),
+  everything: createFeedConfig(feedsJson.everything),
+  about: createFeedConfig(feedsJson.about),
+  blog: createFeedConfig(feedsJson.blog),
+  snippets: createFeedConfig(feedsJson.snippets),
 };

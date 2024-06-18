@@ -1,0 +1,18 @@
+---
+permalink: /sitemap.xml
+layout: xml
+eleventyExcludeFromCollections: true
+---
+
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <template
+    webc:nokeep
+    webc:for="item of collections.all">
+    <sitemap>
+      <loc @text="`${$data.site.url}${item.url}`"></loc>
+      <lastmod
+        webc:if="item.date"
+        @text="item.date.toISOString()"></lastmod>
+    </sitemap>
+  </template>
+</sitemapindex>

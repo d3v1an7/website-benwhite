@@ -2,6 +2,7 @@
 layout: index
 permalink: '404.html'
 title: Page not found
+standfirst: This page couldn't be found.
 eleventyExcludeFromCollections: true
 nofollow: true
 ---

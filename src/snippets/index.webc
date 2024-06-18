@@ -1,10 +1,19 @@
----
-layout: index
-eleventyExcludeFromCollections: snippets
+---js
+{
+  eleventyComputed: {
+    title: (data) => { return data.feeds.snippets.title },
+    standfirst: (data) => { return data.feeds.snippets.description },
+    eleventyExcludeFromCollections: (data) => { return data.feeds.snippets.collection }
+  },
+  layout: 'index'
+}
 ---
 
-<section class="space-y-16">
-  <h1>Snippets</h1>
+<section class="width-reading space-y-10">
+  <h1 @text="title"></h1>
+  <p
+    class="standfirst"
+    @text="standfirst"></p>
   <section-index-links
     :collection="$data.collections.snippets"
     :standfirst="true"></section-index-links>

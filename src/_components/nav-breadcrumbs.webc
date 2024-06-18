@@ -4,8 +4,14 @@
   <ol class="items-center">
     <!-- NOTE: Disabling prettier for navigation items as the whitespace in the HTML will jank up the spacing. -->
     <!-- prettier-ignore -->
-    <li><a title="home" href="/"><svg-logo class="h-6 text-violet-600 inline-block -mt-[2px]"></svg-logo></a></li>
+    <li>
+      <a title="home" href="/">
+        <svg-logo class="h-6 text-violet-600 inline-block -mt-[2px]"></svg-logo>
+      </a>
+    </li>
     <!-- prettier-ignore -->
-    <li webc:for="(item, index) of makeBreadcrumbs($data.page.filePathStem)" :class="index > 0 ? 'hidden sm:inline-block' : ''"><a :href="item.path" @text="item.title"></a></li>
+    <li webc:for="(item, index) of makeBreadcrumbs($data.page.filePathStem)" :class="index > 0 ? 'hidden sm:inline-block' : ''">
+      <a :href="item.path" @text="item.title"></a>
+    </li>
   </ol>
 </nav>

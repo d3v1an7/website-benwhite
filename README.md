@@ -12,16 +12,17 @@
 - [x] Tidy 11ty config
 - [x] RSS
 - [x] Small breakpoint styling/menu
-- [ ] Sitemap
+- [x] Sitemap
 - [x] Cachebusting strat for css
-- [ ] SEO/head tags
+- [x] SEO/head tags
+- [ ] Write content
 - [ ] Build pipeline
-- [ ] Actual content
+- [ ] Cloudflare optimisations (fonts, etc)
 
 ## Later
 
 - [ ] Search
-- [ ] Full site feed
+- [ ] Terminal mode
 
 ## Stack
 

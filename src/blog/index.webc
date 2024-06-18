@@ -1,10 +1,19 @@
----
-layout: index
-eleventyExcludeFromCollections: blog
+---js
+{
+  eleventyComputed: {
+    title: (data) => { return data.feeds.blog.title },
+    standfirst: (data) => { return data.feeds.blog.description },
+    eleventyExcludeFromCollections: (data) => { return data.feeds.blog.collection }
+  },
+  layout: 'index'
+}
 ---
 
-<section class="space-y-16">
-  <h1>Blogs</h1>
+<section class="width-reading space-y-10">
+  <h1 @text="title"></h1>
+  <p
+    class="standfirst"
+    @text="standfirst"></p>
   <section-index-links
     :collection="$data.collections.blog"
     :standfirst="true"></section-index-links>

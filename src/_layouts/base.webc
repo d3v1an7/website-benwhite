@@ -3,6 +3,16 @@
   lang="en"
   class="scroll-smooth">
   <head>
+    <!-- Order determined by: https://github.com/rviscomi/capo.js -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title
+      @text="$data.title ? `${$data.title} — ${$data.site.title}` : $data.site.title"></title>
+    <script
+      webc:keep
+      @raw="getBundle('js')"></script>
     <link
       webc:keep
       rel="stylesheet"
@@ -10,27 +20,55 @@
     <style
       webc:keep
       @html="compileCss('./src/style.css')"></style>
+    <meta
+      name="description"
+      :content="$data.standfirst || $data.site.description" />
+    <meta
+      webc:if="$data.nofollow"
+      name="robots"
+      content="noindex, nofollow" />
     <template
       webc:is="favicon-emoji"
       @emoji="✨"></template>
-    <script
-      webc:keep
-      @raw="getBundle('js')"></script>
+    <meta
+      property="og:title"
+      :content="$data.title || $data.site.title" />
+    <meta
+      property="og:description"
+      :content="$data.standfirst || $data.site.description" />
+    <meta
+      property="og:url"
+      :content="`${$data.site.url}${$data.page.url}`" />
+    <meta
+      property="og:site_name"
+      :content="$data.site.title" />
+    <link
+      rel="canonical"
+      :href="`${$data.site.url}${$data.page.url}`" />
+    <link
+      webc:for="item of Object.values($data.feeds)"
+      rel="alternate"
+      type="application/atom+xml"
+      :href="`${$data.site.url}/rss/${item.collection}.xml`"
+      :title="item.rssTitle" />
+    <link
+      rel="me"
+      href="https://infosec.exchange/@d3v1an7" />
   </head>
   <body
     class="flex min-h-screen w-full flex-col bg-stone-200 dark:bg-stone-900">
     <a
       href="#content"
-      class="focus-state sr-only left-1/2 top-1.5 z-40 -translate-x-1/2 bg-stone-100 text-sm focus:not-sr-only focus:absolute focus:p-1.5 sm:top-2 dark:bg-stone-900">
-      skip to content
-    </a>
+      class="focus-state sr-only left-1/2 top-1.5 z-40 -translate-x-1/2 bg-stone-100 text-sm focus:not-sr-only focus:absolute focus:p-1.5 sm:top-2 dark:bg-stone-900"
+      >skip to content</a
+    >
     <header
       class="wrapper padding-x width-site mt-6 flex flex-col space-y-8 text-sm">
       <section class="flex flex-row justify-between">
         <nav-breadcrumbs></nav-breadcrumbs>
         <section class="flex flex-row space-x-6">
           <nav-menu class="hidden md:block"></nav-menu>
-          <button-darkmode></button-darkmode>
+          <button-darkmode webc:nokeep></button-darkmode>
         </section>
       </section>
       <nav-menu class="md:hidden"></nav-menu>
