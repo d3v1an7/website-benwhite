@@ -1,35 +1,13 @@
 # website-benwhite
 
-## WIP
-
-- [x] Indexes
-- [x] Beadcrumbs
-- [x] Header nav
-- [x] Footer nav
-- [x] Dark mode toggle
-- [x] Settle on a naming convention for components
-- [x] 404
-- [x] Tidy 11ty config
-- [x] RSS
-- [x] Small breakpoint styling/menu
-- [x] Sitemap
-- [x] Cachebusting strat for css
-- [x] SEO/head tags
-- [ ] Write content
-- [ ] Build pipeline
-- [ ] Cloudflare optimisations (fonts, etc)
-
-## Later
-
-- [ ] Search
-- [ ] Terminal mode
+Source for http://benwhite.com.au.
 
 ## Stack
 
 - The site is built with [Eleventy](https://www.11ty.dev/), which handles the static HTML template, pages and navigation.
 - The template and component language is [WebC](https://www.11ty.dev/docs/languages/webc/).
 - The CSS framework used is [Tailwind](https://tailwindcss.com/).
-- The build, deploy and hosting of the website is handled by [Cloudflare](https://www.cloudflare.com/).
+- The build pipeline and hosting of the website is handled by [Cloudflare](https://www.cloudflare.com/).
 
 ## Build
 
@@ -41,9 +19,14 @@ Changes to the `main` branch will kick off a build and deploy to [benwhite.com.a
 # Deps
 brew install nodenv
 nodenv install
-# TODO: Probably some Cloudflare tooling here?
 
 # Site
 git clone git@github.com:d3v1an7/website.git ~/workspace/website && cd ~/workspace/website
 npm install
+npm run start
 ```
+
+## To build later...
+
+- [ ] Search
+- [ ] Terminal mode
