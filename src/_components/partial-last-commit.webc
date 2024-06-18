@@ -5,7 +5,7 @@
       :href="`https://github.com/d3v1an7/website-benwhite/commit/${process.env.CF_PAGES_COMMIT_SHA}`"
       class="link-hover"
       target="_blank"
-      @text="process.env.CF_PAGES_COMMIT_SHA"></a>
+      @text="process.env.CF_PAGES_COMMIT_SHA.slice(0,6)"></a>
   </p>
   <p>
     made with
