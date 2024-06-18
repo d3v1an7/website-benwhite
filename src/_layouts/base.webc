@@ -96,5 +96,6 @@
       webc:keep
       @raw="getBundle('js', 'defer')"
       defer></script>
+    <partial-analytics></partial-analytics>
   </body>
 </html>
