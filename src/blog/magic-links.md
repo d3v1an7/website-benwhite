@@ -14,9 +14,9 @@ I experimented with a few auth providers, chose one, built the thing and launche
 
 Things seemed to be going well, but then:
 
-> “When I try and sign in the link says it is expired.”
+> “When I try to sign in, the site says the link has expired.”
 
-Uh oh, that doesn’t seem like a nice experience. Turns out we have some readers that work in, lets say, fairly corporate environments. Their security teams want to protect their users from phishing. That’s good!
+Uh oh, that doesn’t seem like a nice experience. Turns out we have some readers that work in, let’s say, fairly corporate environments. Their security teams want to protect their users from phishing. That’s good!
 
 Unfortunately, checking emails for phishing requires an automated process to open links, and... oh no, the link checker has the sign in token now, not the user. That’s bad.
 
@@ -30,10 +30,19 @@ When a user opens a web link from a mobile app, the link typically doesn't open 
 
 We directed people to the plain text link they could copy and paste into the desired browser (or webview), but this felt... extremely suboptimal. Then:
 
-> “We can only open our emails in Teams, and the links open in a sandboxed browser.”
+> “We can only receive work emails in Teams, and links open in a sandboxed browser.”
 
 Lmao, okay, we can’t fix this at all.
 
 Earlier this year we removed magic links and switched all users to OTP, to the joy and delight of our support team (hello Dave).
 
 So if you’re building an application, maybe you’ll be fine? I think Slack still use ‘em? But if you’re building a website, it’d recommend sticking with OTP.
+
+---
+
+### TLDR;
+
+- Link checkers/email security tools can accidently expire magic links.
+- The magic link flow is super janky when trying to sign in to a website that was loaded in a webview.
+- Some users straight up can't make use of magic links to sign in to websites because of security policies.
+- Magic links aren't ready for wide adoption as a flow for signing into websites, so we switched to OTP instead.
