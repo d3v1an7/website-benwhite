@@ -51,6 +51,9 @@
       property="og:url"
       :content="`${$data.site.url}${$data.page.url}`" />
     <meta
+      property="og:image"
+      content="/social.png" />
+    <meta
       property="og:site_name"
       :content="$data.site.title" />
     <link
