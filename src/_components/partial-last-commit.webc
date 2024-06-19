@@ -1,9 +1,9 @@
-<div class="flex space-x-6">
+<div class="flex flex-col space-y-3 sm:flex-row sm:space-x-6 sm:space-y-0">
   <p webc:if="process.env.CF_PAGES_COMMIT_SHA">
     last update:
     <a
       :href="`https://github.com/d3v1an7/website-benwhite/commit/${process.env.CF_PAGES_COMMIT_SHA}`"
-      class="focus-state link-hover"
+      class="link-underline-hover"
       target="_blank"
       @text="process.env.CF_PAGES_COMMIT_SHA.slice(0,6)"></a>
   </p>
@@ -11,7 +11,7 @@
     made with
     <a
       href="https://www.11ty.dev/"
-      class="focus-state link-hover"
+      class="link-underline-hover"
       target="_blank"
       >11ty</a
     >

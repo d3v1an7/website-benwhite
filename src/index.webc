@@ -2,7 +2,7 @@
 layout: index
 ---
 
-<section class="full width-reading">
+<section class="content-body width-reading">
   <!-- It'd be neat to use <template webc:type="11ty" 11ty:type="njk,md"> here so we can use markdown for the copy, but I can't get it to play nice with Prettier yet. -->
   <h1>Hello</h1>
   <p class="standfirst">
@@ -25,7 +25,7 @@ layout: index
     being bad at videogames.
   </p>
 </section>
-<hr class="my-20" />
+<hr />
 <div class="grid gap-8 md:grid-cols-2">
   <section class="space-y-10">
     <h1>Blog</h1>

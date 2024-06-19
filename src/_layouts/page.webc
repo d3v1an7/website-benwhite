@@ -5,7 +5,7 @@ layout: base
 <main
   id="content"
   class="wrapper padding-x padding-y width-reading flex-grow">
-  <article class="full">
+  <article class="content-body">
     <header class="mb-10">
       <h1
         webc:if="title"

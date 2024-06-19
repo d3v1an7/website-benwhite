@@ -6,7 +6,7 @@
     <!-- NOTE: Disabling prettier for navigation items as the whitespace in the HTML will jank up the spacing. -->
     <!-- prettier-ignore -->
     <li webc:for="item of $data.navigation.header">
-      <a :href="item.path" @text="item.title"></a>
+      <a :href="item.path" class="link-underline-hover" @text="item.title"></a>
     </li>
   </ol>
 </nav>

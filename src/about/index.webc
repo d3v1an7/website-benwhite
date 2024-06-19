@@ -9,13 +9,16 @@
 }
 ---
 
-<section class="width-reading space-y-10">
-  <h1 @text="title"></h1>
-  <p
-    class="standfirst"
-    @text="standfirst"></p>
+<div class="width-reading">
+  <section class="content-body">
+    <h1 @text="title"></h1>
+    <p
+      class="standfirst"
+      @text="standfirst"></p>
+    <hr />
+  </section>
   <section-index-links
     :collection="$data.collections.about"
     :standfirst="true"
     :divider="true"></section-index-links>
-</section>
+</div>

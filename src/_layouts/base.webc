@@ -73,7 +73,7 @@
     class="flex min-h-screen w-full flex-col bg-stone-200 dark:bg-stone-900">
     <a
       href="#content"
-      class="focus-state sr-only left-1/2 top-1.5 z-40 -translate-x-1/2 bg-stone-100 text-sm focus:not-sr-only focus:absolute focus:p-1.5 sm:top-2 dark:bg-stone-900"
+      class="sr-only left-1/2 top-1.5 z-40 -translate-x-1/2 bg-stone-100 text-sm focus:not-sr-only focus:absolute focus:p-1.5 sm:top-2 dark:bg-stone-900"
       >skip to content</a
     >
     <header
@@ -91,7 +91,7 @@
       webc:nokeep
       @html="content"></template>
     <footer
-      class="wrapper padding-x width-site my-6 flex flex-row justify-between text-sm">
+      class="wrapper padding-x width-site my-6 flex flex-col space-y-6 text-sm sm:flex-row sm:justify-between sm:space-y-0">
       <nav-social></nav-social>
       <partial-last-commit></partial-last-commit>
     </footer>

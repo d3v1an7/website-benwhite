@@ -9,7 +9,7 @@
     @apply mx-auto w-full;
   }
   .padding-x {
-    @apply px-6;
+    @apply px-4;
     @apply sm:px-8;
   }
   .padding-y {
@@ -31,10 +31,10 @@
   h4,
   h5,
   h6 {
-    @apply text-pretty font-sans text-xl/[1.4] font-bold uppercase text-stone-900 sm:text-2xl/[1.4] dark:text-stone-50;
+    @apply text-pretty font-sans text-xl/[1.8] font-bold uppercase text-stone-900 sm:text-2xl/[1.8] dark:text-stone-50;
   }
   h1 {
-    @apply text-6xl/[1.1] sm:text-7xl/[1.1];
+    @apply text-5xl/[1.1] sm:text-6xl/[1.1] md:text-7xl/[1.1];
   }
   time {
     @apply font-sans text-sm uppercase tracking-wider text-stone-600 dark:text-stone-300;
@@ -43,41 +43,61 @@
     @apply font-mono text-lg/[1.8] lining-nums text-stone-800 sm:text-xl/[1.8] dark:text-stone-200;
   }
   hr {
-    @apply my-8 h-px border-0 bg-stone-400 dark:bg-stone-700;
+    @apply my-8 h-px border-0 bg-stone-400 sm:my-12 dark:bg-stone-700;
   }
   svg {
     @apply pointer-events-none inline-block;
   }
-  .full h1,
-  .full h2,
-  .full h3,
-  .full h4,
-  .full h5,
-  .full h6,
-  .full p {
-    @apply mb-10;
+  a {
+    @apply focus:outline-none focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-violet-600;
   }
-  .full .standfirst {
+  .content-body h1,
+  .content-body h2,
+  .content-body h3,
+  .content-body h4,
+  .content-body h5,
+  .content-body h6,
+  .content-body p {
+    @apply mb-8 sm:mb-12;
+  }
+  .content-body .standfirst {
     @apply mb-6 text-pretty;
   }
-  .summary h3 {
-    @apply mb-1;
+  .content-body p.standfirst {
+    @apply text-xl/[1.8] sm:text-2xl/[1.8];
   }
-  .full p.standfirst {
-    @apply text-2xl/[1.8];
-  }
-  .full ul {
+  .content-body ul {
     @apply list-disc;
   }
-  .full ol {
+  .content-body ol {
     @apply list-decimal;
   }
-  .full li {
+  .content-body li {
     @apply mb-3 ml-5;
   }
-  .full a {
+  .content-body a {
     @apply link-underline;
-    @apply focus-state;
+  }
+  .content-body blockquote {
+    @apply mb-10 border-l-8 border-violet-600 pl-4;
+  }
+  .content-body blockquote p {
+    @apply text-pretty text-2xl/[1.6] italic sm:text-3xl/[1.6];
+  }
+  .content-body blockquote footer {
+    @apply text-sm;
+  }
+  .content-body blockquote cite {
+    @apply not-italic;
+  }
+  .content-summary h3 {
+    @apply mb-1;
+  }
+  .content-summary h3 a {
+    @apply link-underline-hover;
+  }
+  .content-summary .standfirst {
+    @apply text-pretty text-base/[1.8] sm:text-lg/[1.8];
   }
   .link-underline {
     @apply hover:link-underline-hover underline decoration-1 underline-offset-4;
@@ -86,37 +106,22 @@
     @apply hover:underline hover:decoration-violet-600 hover:decoration-4 hover:underline-offset-4;
   }
   .link-hover {
-    @apply hover:text-violet-600 dark:hover:text-violet-400;
-  }
-  .btn {
-    @apply inline-flex touch-manipulation select-none items-center justify-center rounded-md px-5 py-3 text-base transition duration-150 ease-in-out;
-    @apply focus-state;
-  }
-  .full blockquote {
-    @apply mb-10 border-l-8 border-violet-600 pl-4;
-  }
-  .full blockquote p {
-    @apply text-pretty text-2xl/[1.6] italic sm:text-3xl/[1.6];
-  }
-  .full blockquote footer {
-    @apply text-sm;
-  }
-  .full blockquote cite {
-    @apply not-italic;
+    @apply hover:text-violet-600;
   }
   nav ol {
     @apply flex min-h-6 flex-row items-center;
   }
   nav li a {
-    @apply link-hover h-6 px-1.5 py-1 leading-6;
-    @apply focus-state;
+    @apply h-6 px-1.5 py-1 leading-6;
   }
   nav.menu li a {
     @apply px-3;
   }
+  nav.menu li:first-child a {
+    @apply -ml-3 md:ml-3;
+  }
   nav.social li a {
     @apply h-7;
-    @apply focus-state;
   }
   nav li svg {
     @apply -mt-[2px] inline-block;
@@ -141,8 +146,5 @@
 @layer utilities {
   ::selection {
     @apply bg-violet-200 dark:bg-violet-400;
-  }
-  .focus-state {
-    @apply focus:outline-none focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-violet-600;
   }
 }

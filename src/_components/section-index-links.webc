@@ -6,19 +6,19 @@
 </script>
 <section class="space-y-8">
   <article
-    class="summary"
+    class="content-summary"
     webc:for="item of setupCollection(collection, limit)">
     <header class="mb-2">
       <h3>
         <a
           :href="item.page.url"
-          @text="item.data.title"
-          class="link-underline-hover"></a>
+          @text="item.data.title"></a>
       </h3>
       <time-formatted :date="item.page.date"></time-formatted>
     </header>
     <p
       webc:if="item.data.standfirst && standfirst"
+      class="standfirst"
       @text="item.data.standfirst"></p>
     <hr webc:if="divider" />
   </article>

@@ -11,7 +11,7 @@
     </li>
     <!-- prettier-ignore -->
     <li webc:for="(item, index) of makeBreadcrumbs($data.page.filePathStem)" :class="index > 0 ? 'hidden sm:inline-block' : ''">
-      <a :href="item.path" @text="item.title"></a>
+      <a :href="item.path" class="link-underline-hover" @text="item.title"></a>
     </li>
   </ol>
 </nav>
