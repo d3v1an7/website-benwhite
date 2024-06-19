@@ -1,0 +1,10 @@
+<lite-youtube :videoid="id">
+  <a
+    class="lite-youtube-fallback"
+    :href="`https://www.youtube.com/watch?v=${id}`"
+    >Watch on YouTube</a
+  >
+</lite-youtube>
+<script>
+  import '@justinribeiro/lite-youtube';
+</script>

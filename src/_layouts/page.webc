@@ -2,11 +2,20 @@
 layout: base
 ---
 
+<script webc:setup>
+  const filteredTags = tags.filter(
+    (item) => item !== 'about' && item !== 'blog' && item !== 'snippets',
+  );
+</script>
 <main
   id="content"
   class="wrapper padding-x padding-y width-reading flex-grow">
   <article class="content-body">
     <header class="mb-10">
+      <p
+        webc:for="item of filteredTags"
+        class="tag !mb-6"
+        @text="`#${item}`"></p>
       <h1
         webc:if="title"
         @text="title"></h1>

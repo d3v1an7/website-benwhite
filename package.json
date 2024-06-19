@@ -20,6 +20,7 @@
     "@11ty/eleventy-plugin-rss": "github:11ty/eleventy-plugin-rss",
     "@11ty/eleventy-plugin-webc": "^0.11.2",
     "@formkit/tempo": "^0.1.1",
+    "@justinribeiro/lite-youtube": "^1.5.0",
     "autoprefixer": "^10.4.19",
     "cheerio": "^1.0.0-rc.12",
     "cssnano": "^7.0.2",

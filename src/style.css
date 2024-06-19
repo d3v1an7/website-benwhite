@@ -36,6 +36,7 @@
   h1 {
     @apply text-5xl/[1.1] sm:text-6xl/[1.1] md:text-7xl/[1.1];
   }
+  .tag,
   time {
     @apply font-sans text-sm uppercase tracking-wider text-stone-600 dark:text-stone-300;
   }
