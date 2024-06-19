@@ -4,7 +4,7 @@ layout: index
 
 <section class="content-body width-reading">
   <!-- It'd be neat to use <template webc:type="11ty" 11ty:type="njk,md"> here so we can use markdown for the copy, but I can't get it to play nice with Prettier yet. -->
-  <h1>Hello</h1>
+  <h1 class="text-7xl">Hello</h1>
   <p class="standfirst">
     I like making things for the web, in high trust environments, with talented
     people who give a shit.
@@ -18,8 +18,7 @@ layout: index
     have found my happy place at
     <a
       class="link-underline"
-      href="https://www.capitalbrief.com/"
-      target="_blank">
+      href="https://www.capitalbrief.com/">
       capitalbrief.com</a
     >, and when I'm not gardening that codebase, I'll be out for a day hike, or
     being bad at videogames.

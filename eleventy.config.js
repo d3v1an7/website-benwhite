@@ -25,6 +25,10 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ './public/': '/' });
   eleventyConfig.addPlugin(webc, configPlugins.webc);
   eleventyConfig.addPlugin(bundlerPlugin, configPlugins.bundler);
+  eleventyConfig.addTransform(
+    'addTargetToLinks',
+    configTransforms.addTargetToLinks,
+  );
   eleventyConfig.addTransform('minifyHtml', configTransforms.minifyHtml);
   eleventyConfig.addTransform('formatXml', configTransforms.formatXml);
   // BUG?: @html and @raw will convert entities when used in `<style>`.

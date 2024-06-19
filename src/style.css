@@ -61,10 +61,7 @@
     @apply mb-8 sm:mb-12;
   }
   .content-body .standfirst {
-    @apply mb-6 text-pretty;
-  }
-  .content-body p.standfirst {
-    @apply text-xl/[1.8] sm:text-2xl/[1.8];
+    @apply mb-6 text-pretty text-2xl/[1.8];
   }
   .content-body ul {
     @apply list-disc;

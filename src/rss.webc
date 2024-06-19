@@ -16,10 +16,8 @@ layout: index
     <footer>
       —
       <cite>
-        <a
-          href="https://www.wired.com/story/best-rss-feed-readers/"
-          target="_blank">
-          Scott Gilbertson</a
+        <a href="https://www.wired.com/story/best-rss-feed-readers/"
+          >Scott Gilbertson</a
         >
       </cite>
     </footer>

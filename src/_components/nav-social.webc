@@ -5,7 +5,7 @@
     <!-- NOTE: Disabling prettier for navigation items as the whitespace in the HTML will jank up the spacing. -->
     <!-- prettier-ignore -->
     <li webc:for="item of $data.navigation.footer">
-      <a :href="item.url" class="link-hover" :title="item.title" :target="item.url.startsWith('/') ? '_self' : '_blank'">
+      <a :href="item.url" class="link-hover" :title="item.title">
         <template webc:nokeep @html="`<svg-${item.title}></svg-${item.title}>`"></template>
       </a>
     </li>
