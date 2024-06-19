@@ -16,5 +16,6 @@
     @text="standfirst"></p>
   <section-index-links
     :collection="$data.collections.snippets"
-    :standfirst="true"></section-index-links>
+    :standfirst="true"
+    :divider="true"></section-index-links>
 </section>

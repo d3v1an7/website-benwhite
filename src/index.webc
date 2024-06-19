@@ -27,18 +27,16 @@ layout: index
 </section>
 <hr class="my-20" />
 <div class="grid gap-8 md:grid-cols-2">
-  <section
-    webc:if="data?.collections.blog"
-    class="space-y-10">
+  <section class="space-y-10">
     <h1>Blog</h1>
     <section-index-links
-      :collection="$data.collections.blog"></section-index-links>
+      :collection="$data.collections.blog"
+      :limit="3"></section-index-links>
   </section>
-  <section
-    webc:if="data?.collections.snippets"
-    class="space-y-10">
+  <section class="space-y-10">
     <h1>Snippets</h1>
     <section-index-links
-      :collection="$data.collections.snippets"></section-index-links>
+      :collection="$data.collections.snippets"
+      :limit="3"></section-index-links>
   </section>
 </div>

@@ -10,8 +10,13 @@ layout: base
       <h1
         webc:if="title"
         @text="title"></h1>
+      <p
+        webc:if="standfirst"
+        class="standfirst"
+        @text="standfirst"></p>
       <time-formatted :date="date"></time-formatted>
     </header>
+    <hr />
     <template
       webc:nokeep
       @html="content"></template>

@@ -31,10 +31,10 @@
   h4,
   h5,
   h6 {
-    @apply font-sans text-xl font-bold uppercase text-stone-900 sm:text-2xl dark:text-stone-50;
+    @apply text-pretty font-sans text-xl/[1.4] font-bold uppercase text-stone-900 sm:text-2xl/[1.4] dark:text-stone-50;
   }
   h1 {
-    @apply text-6xl sm:text-7xl;
+    @apply text-6xl/[1.1] sm:text-7xl/[1.1];
   }
   time {
     @apply font-sans text-sm uppercase tracking-wider text-stone-600 dark:text-stone-300;
@@ -57,7 +57,9 @@
   .full p {
     @apply mb-10;
   }
-  .full header h1,
+  .full .standfirst {
+    @apply mb-6 text-pretty;
+  }
   .summary h3 {
     @apply mb-1;
   }
@@ -90,8 +92,11 @@
     @apply inline-flex touch-manipulation select-none items-center justify-center rounded-md px-5 py-3 text-base transition duration-150 ease-in-out;
     @apply focus-state;
   }
+  .full blockquote {
+    @apply mb-10 border-l-8 border-violet-600 pl-4;
+  }
   .full blockquote p {
-    @apply mb-5;
+    @apply text-pretty text-2xl/[1.6] italic sm:text-3xl/[1.6];
   }
   .full blockquote footer {
     @apply text-sm;

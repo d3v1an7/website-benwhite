@@ -1,7 +1,13 @@
+<script webc:setup>
+  function setupCollection(collection, limit) {
+    if (!limit) return collection;
+    return collection.slice(0, limit);
+  }
+</script>
 <section class="space-y-8">
   <article
     class="summary"
-    webc:for="item of collection">
+    webc:for="item of setupCollection(collection, limit)">
     <header class="mb-2">
       <h3>
         <a
@@ -14,5 +20,6 @@
     <p
       webc:if="item.data.standfirst && standfirst"
       @text="item.data.standfirst"></p>
+    <hr webc:if="divider" />
   </article>
 </section>
