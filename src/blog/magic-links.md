@@ -1,6 +1,6 @@
 ---
 title: Magic links are great, until they’re not
-standfirst: We want to make good, helpful, smart things. However, people who use your things don’t care about your good intentions. They just want to do a thing, and have the thing work.
+standfirst: People using these things we build don’t care about our good intentions or how well the thing works for others. They just want the thing to work for them.
 date: 2024-06-19
 ---
 
