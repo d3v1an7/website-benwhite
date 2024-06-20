@@ -65,10 +65,10 @@
     @apply mb-6 text-pretty text-2xl/[1.8];
   }
   .content-body ul {
-    @apply list-disc;
+    @apply mb-10 list-disc;
   }
   .content-body ol {
-    @apply list-decimal;
+    @apply mb-10 list-decimal;
   }
   .content-body li {
     @apply mb-3 ml-5;
