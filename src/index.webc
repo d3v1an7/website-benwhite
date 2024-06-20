@@ -29,13 +29,13 @@ layout: index
   <section class="space-y-10">
     <h1>Blog</h1>
     <section-index-links
-      :collection="$data.collections.blog"
+      :collection="$data.collections.blogReversed"
       :limit="3"></section-index-links>
   </section>
   <section class="space-y-10">
     <h1>Snippets</h1>
     <section-index-links
-      :collection="$data.collections.snippets"
+      :collection="$data.collections.snippetsReversed"
       :limit="3"></section-index-links>
   </section>
 </div>

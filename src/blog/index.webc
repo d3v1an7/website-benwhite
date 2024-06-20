@@ -18,7 +18,7 @@
     <hr />
   </section>
   <section-index-links
-    :collection="$data.collections.blog"
+    :collection="$data.collections.blogReversed"
     :standfirst="true"
     :divider="true"></section-index-links>
 </div>

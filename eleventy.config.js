@@ -9,6 +9,15 @@ import { configTransforms } from './config/transforms.js';
 
 export default async function (eleventyConfig) {
   eleventyConfig.addCollection('everything', configCollections.everything);
+  eleventyConfig.addCollection(
+    'aboutReversed',
+    configCollections.aboutReversed,
+  );
+  eleventyConfig.addCollection('blogReversed', configCollections.blogReversed);
+  eleventyConfig.addCollection(
+    'snippetsReversed',
+    configCollections.snippetsReversed,
+  );
   eleventyConfig.addPlugin(feedPlugin, configFeeds.everything);
   eleventyConfig.addPlugin(feedPlugin, configFeeds.about);
   eleventyConfig.addPlugin(feedPlugin, configFeeds.blog);
@@ -29,6 +38,7 @@ export default async function (eleventyConfig) {
     'addTargetToLinks',
     configTransforms.addTargetToLinks,
   );
+  eleventyConfig.addTransform('curlyQuotes', configTransforms.curlyQuotes);
   eleventyConfig.addTransform('minifyHtml', configTransforms.minifyHtml);
   eleventyConfig.addTransform('formatXml', configTransforms.formatXml);
   // BUG?: @html and @raw will convert entities when used in `<style>`.

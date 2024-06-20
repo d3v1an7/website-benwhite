@@ -11,4 +11,13 @@ export const configCollections = {
             item.data.tags.includes('snippets')),
       );
   },
+  aboutReversed(collectionApi) {
+    return collectionApi.getFilteredByTag('about').reverse();
+  },
+  blogReversed(collectionApi) {
+    return collectionApi.getFilteredByTag('blog').reverse();
+  },
+  snippetsReversed(collectionApi) {
+    return collectionApi.getFilteredByTag('snippets').reverse();
+  },
 };

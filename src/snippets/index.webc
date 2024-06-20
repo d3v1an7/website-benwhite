@@ -18,7 +18,7 @@
     <hr />
   </section>
   <section-index-links
-    :collection="$data.collections.snippets"
+    :collection="$data.collections.snippetsReversed"
     :standfirst="true"
     :divider="true"></section-index-links>
 </div>
