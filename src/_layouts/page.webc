@@ -3,9 +3,13 @@ layout: base
 ---
 
 <script webc:setup>
-  const filteredTags = tags.filter(
-    (item) => item !== 'about' && item !== 'blog' && item !== 'snippets',
-  );
+  const filteredTags = (tags) => {
+    const tagsSet = new Set();
+    tags
+      .filter((tag) => !['about', 'blog', 'snippets'].includes(tag))
+      .forEach((tag) => tagsSet.add(tag));
+    return Array.from(tagsSet).sort();
+  };
 </script>
 <main
   id="content"
@@ -13,7 +17,7 @@ layout: base
   <article class="content-body">
     <header class="mb-10">
       <p
-        webc:for="item of filteredTags"
+        webc:for="item of filteredTags(tags)"
         class="tag !mb-6"
         @text="`#${item}`"></p>
       <h1
