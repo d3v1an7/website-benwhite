@@ -17,4 +17,4 @@ Fine I guess, technically correct, but it wasn't sitting quite right. So I threw
 - `paid_user_list`
 - `nonpaid_user_list`
 
-Less ambiguity, more consistent verbage, chef kiss.
+Less ambiguity, more consistent verbiage, chef kiss.
