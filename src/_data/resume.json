@@ -1,0 +1,85 @@
+[
+  {
+    "companyName": "Capital Brief",
+    "companyLogo": "/logo-capital-brief.jpg",
+    "companyUrl": "https://www.capitalbrief.com/",
+    "roles": [
+      {
+        "title": "Head of Technology",
+        "dateStart": "2023-02",
+        "description": "Took Capital Brief from idea to working product in 6 months, including website, newsroom CMS, newsletter product and subscription platform."
+      }
+    ]
+  },
+  {
+    "companyName": "Fairfax Media / Nine",
+    "companyLogo": "/logo-nine.jpg",
+    "companyUrl": "https://www.nineforbrands.com.au/",
+    "roles": [
+      {
+        "title": "Security Practice Lead",
+        "dateStart": "2021-04",
+        "dateEnd": "2023-02",
+        "description": "Accountable for raising security awareness and proficiency for 30+ engineering teams across Nine. Empowered engineers to adopt a DevSecOps mindset, through education, tooling and expertise."
+      },
+      {
+        "title": "Engineering Manager",
+        "dateStart": "2016-08",
+        "dateEnd": "2021-04",
+        "description": "Part of the <a class=\"link-underline\" href=\"https://insidestory.org.au/fairfaxs-blue-team/\">Fairfax Media Blue Project</a>, building what became an <a class=\"link-underline\" href=\"https://www.linkedin.com/posts/damian-cronan-2a568a2_inma-firstplace-inkplatform-activity-6694376907183591424-3bsZ/\">INMA award winning newsroom CMS</a>. Managed a team of high performing, talented engineers. Strong focus on helping them reach the next step of their career goals."
+      }
+    ]
+  },
+  {
+    "companyName": "Mamamia",
+    "companyLogo": "/logo-mamamia.jpg",
+    "companyUrl": "https://www.mamamia.com.au/",
+    "roles": [
+      {
+        "title": "Head of IT & Development",
+        "dateStart": "2014-07",
+        "dateEnd": "2016-08",
+        "description": "Responsible for sourcing and managing a small team of local and offshore engineers. Accountable for continuous product delivery, deploying stable and performant Cloud infrastructure, along with management of internal IT hardware and systems."
+      }
+    ]
+  },
+  {
+    "companyName": "Allure Media",
+    "companyLogo": "/logo-allure-media.jpg",
+    "companyUrl": "https://pedestriangroup.com.au/",
+    "roles": [
+      {
+        "title": "Technology Manager",
+        "dateStart": "2010-10",
+        "dateEnd": "2014-06",
+        "description": "Responsible for sourcing and managing a small team of designers and engineers, managing the continuing development of Allure web properties. Role spanned design, video production, web development, along with DevOps and Sysadmin duties. Lead the 2011 redesign of the Allure Media Technology Network."
+      }
+    ]
+  },
+  {
+    "companyName": "eBrands",
+    "companyLogo": "/logo-ebrands.jpg",
+    "companyUrl": "https://www.ebrands.com.au/",
+    "roles": [
+      {
+        "title": "Web Designer & Developer",
+        "dateStart": "2007-02",
+        "dateEnd": "2010-10",
+        "description": "Responsible for designing and developing websites and advertisements, creating Flash animations, along with directing video, animation and motion graphics work."
+      }
+    ]
+  },
+  {
+    "companyName": "Bemm",
+    "companyLogo": "/logo-bemm.jpg",
+    "companyUrl": "https://www.bemm.com.au/",
+    "roles": [
+      {
+        "title": "Designer & Video Producer",
+        "dateStart": "2003-01",
+        "dateEnd": "2006-12",
+        "description": "Self-employed. Providing photography, web services and short promotional videos."
+      }
+    ]
+  }
+]

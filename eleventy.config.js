@@ -22,11 +22,13 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(feedPlugin, configFeeds.about);
   eleventyConfig.addPlugin(feedPlugin, configFeeds.blog);
   eleventyConfig.addPlugin(feedPlugin, configFeeds.snippets);
-  eleventyConfig.addFilter('dateShort', configFilters.dateShort);
-  eleventyConfig.addFilter('dateLong', configFilters.dateLong);
+  eleventyConfig.addFilter('dateFormat', configFilters.dateFormat);
+  eleventyConfig.addFilter('durationShort', configFilters.durationShort);
+  eleventyConfig.addFilter('durationLong', configFilters.durationLong);
   eleventyConfig.addFilter('yearsSince', configFilters.yearsSince);
   eleventyConfig.addFilter('makeBreadcrumbs', configFilters.makeBreadcrumbs);
   eleventyConfig.addFilter('compileCss', configFilters.buildCss);
+  eleventyConfig.addFilter('filteredTags', configFilters.filteredTags);
   eleventyConfig.addWatchTarget('./src/style.css');
   eleventyConfig.addLayoutAlias('base', 'base.webc');
   eleventyConfig.addLayoutAlias('home', 'index.webc');

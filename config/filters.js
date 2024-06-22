@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { format, diffYears } from '@formkit/tempo';
+import { format, diffDays, diffMonths, diffYears } from '@formkit/tempo';
 import tailwindcss from 'tailwindcss';
 import autoprefixer from 'autoprefixer';
 import postcss from 'postcss';
@@ -8,11 +8,28 @@ import discardComments from 'postcss-discard-comments';
 import defaultTheme from 'tailwindcss/defaultTheme.js';
 
 export const configFilters = {
-  dateShort(dateString) {
-    return format(dateString, 'YYYY-MM-DD');
+  dateFormat(dateString, formatString) {
+    return format(dateString, formatString);
   },
-  dateLong(dateString) {
-    return format(dateString, 'D MMMM YYYY');
+  durationShort(start, end) {
+    // Spec: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-duration-string
+    return `PD${diffDays((start, end))}`;
+  },
+  durationLong(start, end) {
+    const months = diffMonths(end, start);
+    const years = Math.floor(months / 12);
+    const remainingMonths = months % 12;
+    let result = '';
+    if (years > 0) {
+      result += years + (years > 1 ? ' years' : ' year');
+    }
+    if (years > 0 && remainingMonths > 0) {
+      result += ', ';
+    }
+    if (remainingMonths > 0) {
+      result += remainingMonths + (remainingMonths > 1 ? ' months' : ' month');
+    }
+    return result;
   },
   yearsSince(dateString) {
     return diffYears(new Date(), new Date(dateString));
@@ -51,5 +68,12 @@ export const configFilters = {
       to: null,
     });
     return result.css;
+  },
+  filteredTags(tags) {
+    const tagsSet = new Set();
+    tags
+      .filter((tag) => !['about', 'blog', 'snippets'].includes(tag))
+      .forEach((tag) => tagsSet.add(tag));
+    return Array.from(tagsSet).sort();
   },
 };

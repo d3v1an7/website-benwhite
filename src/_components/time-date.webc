@@ -1,0 +1,4 @@
+<time
+  webc:if="date"
+  :datetime="dateFormat(date, format ? format : 'YYYY-MM-DD')"
+  @text="dateFormat(date, format ? format : 'D MMMM YYYY')"></time>

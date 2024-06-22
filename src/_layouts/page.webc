@@ -2,15 +2,6 @@
 layout: base
 ---
 
-<script webc:setup>
-  const filteredTags = (tags) => {
-    const tagsSet = new Set();
-    tags
-      .filter((tag) => !['about', 'blog', 'snippets'].includes(tag))
-      .forEach((tag) => tagsSet.add(tag));
-    return Array.from(tagsSet).sort();
-  };
-</script>
 <main
   id="content"
   class="wrapper padding-x padding-y width-reading flex-grow">
@@ -27,7 +18,7 @@ layout: base
         webc:if="standfirst"
         class="standfirst"
         @text="standfirst"></p>
-      <time-formatted :date="date"></time-formatted>
+      <time-date :date="date"></time-date>
     </header>
     <hr />
     <template

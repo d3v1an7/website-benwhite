@@ -1,0 +1,11 @@
+---
+layout: base
+---
+
+<main
+  id="content"
+  class="wrapper padding-x padding-y width-reading flex-grow">
+  <template
+    webc:nokeep
+    @html="content"></template>
+</main>

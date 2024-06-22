@@ -30,12 +30,14 @@ layout: index
     <h1>Blog</h1>
     <section-index-links
       :collection="$data.collections.blogReversed"
+      :show_date="true"
       :limit="3"></section-index-links>
   </section>
   <section class="space-y-10">
     <h1>Snippets</h1>
     <section-index-links
       :collection="$data.collections.snippetsReversed"
+      :show_date="true"
       :limit="3"></section-index-links>
   </section>
 </div>

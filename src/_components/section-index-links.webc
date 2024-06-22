@@ -14,10 +14,12 @@
           :href="item.page.url"
           @text="item.data.title"></a>
       </h3>
-      <time-formatted :date="item.page.date"></time-formatted>
+      <time-date
+        webc:if="show_date"
+        :date="item.page.date"></time-date>
     </header>
     <p
-      webc:if="item.data.standfirst && standfirst"
+      webc:if="item.data.standfirst && show_standfirst"
       class="standfirst"
       @text="item.data.standfirst"></p>
     <hr webc:if="divider" />

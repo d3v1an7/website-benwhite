@@ -16,7 +16,7 @@
     <link
       webc:keep
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@500,700&family=JetBrains+Mono&display=swap" />
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500..700&family=JetBrains+Mono:ital,wght@0,400..600;1,400..600&display=swap" />
     <style
       webc:keep
       @html="compileCss('./src/style.css')"></style>

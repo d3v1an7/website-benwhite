@@ -19,6 +19,7 @@
   </section>
   <section-index-links
     :collection="$data.collections.snippetsReversed"
-    :standfirst="true"
+    :show_date="true"
+    :show_standfirst="true"
     :divider="true"></section-index-links>
 </div>

@@ -1,4 +1,0 @@
-<time
-  webc:if="date"
-  :datetime="dateShort(date)"
-  @text="dateLong(date)"></time>

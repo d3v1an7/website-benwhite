@@ -19,6 +19,6 @@
   </section>
   <section-index-links
     :collection="$data.collections.aboutReversed"
-    :standfirst="true"
+    :show_standfirst="true"
     :divider="true"></section-index-links>
 </div>

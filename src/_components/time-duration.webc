@@ -1,0 +1,4 @@
+<time
+  webc:if="start && end"
+  :datetime="durationShort(start, end)"
+  @text="durationLong(start, end)"></time>
