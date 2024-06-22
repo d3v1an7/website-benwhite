@@ -58,6 +58,15 @@ export const configFilters = {
             },
           },
         },
+        plugins: [
+          function ({ addVariant, e }) {
+            addVariant('terminal', ({ modifySelectors, separator }) => {
+              modifySelectors(({ className }) => {
+                return `.terminal .${e(`terminal${separator}${className}`)}`;
+              });
+            });
+          },
+        ],
       }),
       autoprefixer,
       cssnano,

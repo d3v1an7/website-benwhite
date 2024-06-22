@@ -1,16 +1,18 @@
 <button
   id="theme-toggle"
   type="button"
-  class="inline-flex h-6 w-12 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-stone-300 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-600 dark:bg-stone-800"
+  class="terminal:bg-lime-900 inline-flex h-6 w-12 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-stone-300 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-600 dark:bg-stone-800"
   role="switch"
   aria-checked="false">
   <span class="relative flex h-full w-full items-center justify-between px-1">
     <span
       id="toggle-indicator"
-      class="pointer-events-none absolute left-0 hidden h-5 w-5 translate-x-0 rounded-full bg-violet-600">
+      class="terminal:bg-lime-700 pointer-events-none absolute left-0 hidden h-5 w-5 translate-x-0 rounded-full bg-violet-600">
     </span>
-    <svg-sun class="z-10 h-3 w-3 text-stone-50 dark:text-stone-300"></svg-sun>
-    <svg-moon class="z-10 h-3 w-3 text-stone-600 dark:text-stone-50"></svg-moon>
+    <svg-sun
+      class="terminal:text-lime-400 z-10 h-3 w-3 text-stone-50 dark:text-stone-300"></svg-sun>
+    <svg-moon
+      class="terminal:text-lime-400 z-10 h-3 w-3 text-stone-600 dark:text-stone-50"></svg-moon>
     <span class="sr-only">Toggle theme</span>
   </span>
 </button>
@@ -20,11 +22,11 @@
   const toggleIndicator = document.getElementById('toggle-indicator');
   const savedTheme = localStorage.getItem('theme');
   const setTheme = (theme) => {
+    html.classList.remove('light', 'dark', 'terminal');
+    html.classList.add(theme);
     if (theme === 'dark') {
-      html.classList.add('dark');
       themeToggleBtn.setAttribute('aria-checked', 'true');
     } else {
-      html.classList.remove('dark');
       themeToggleBtn.setAttribute('aria-checked', 'false');
     }
     // Avoid flash of animation on load.
@@ -47,4 +49,31 @@
     setTheme(osTheme);
     localStorage.setItem('theme', osTheme);
   }
+  // Easter egg for terminal mode.
+  const keysPressed = { m: false, a: false, t: false };
+  function handleKeyDown(event) {
+    if (['m', 'a', 't'].includes(event.key)) {
+      keysPressed[event.key] = true;
+      checkCombo();
+    }
+  }
+  function handleKeyUp(event) {
+    if (['m', 'a', 't'].includes(event.key)) {
+      keysPressed[event.key] = false;
+    }
+  }
+  function checkCombo() {
+    if (keysPressed['m'] && keysPressed['a'] && keysPressed['t']) {
+      setTheme('terminal');
+      localStorage.setItem('theme', 'terminal');
+      resetKeys();
+    }
+  }
+  function resetKeys() {
+    keysPressed['m'] = false;
+    keysPressed['a'] = false;
+    keysPressed['t'] = false;
+  }
+  window.addEventListener('keydown', handleKeyDown);
+  window.addEventListener('keyup', handleKeyUp);
 </script>

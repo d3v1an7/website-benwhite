@@ -6,7 +6,7 @@
     <!-- prettier-ignore -->
     <li>
       <a title="home" href="/">
-        <svg-logo class="h-6 text-violet-600"></svg-logo>
+        <svg-logo class="h-6 text-violet-600 terminal:text-lime-400"></svg-logo>
       </a>
     </li>
     <!-- prettier-ignore -->
