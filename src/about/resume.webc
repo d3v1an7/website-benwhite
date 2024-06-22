@@ -17,7 +17,7 @@ layout: custom
     <span
       class="terminal:bg-lime-600 absolute left-6 top-6 -ml-px h-full w-0.5 bg-stone-300 dark:bg-stone-600"
       aria-hidden="true"></span>
-    <span class="relative flex flex-row space-x-6">
+    <span class="relative flex flex-row space-x-3 sm:space-x-6">
       <a :href="job.companyUrl">
         <img
           class="terminal:ring-lime-950 flex h-12 w-12 rounded-md ring-8 ring-stone-200 dark:ring-stone-900"
@@ -43,7 +43,7 @@ layout: custom
     <ul class="relative py-10">
       <li
         webc:for="role of job.roles"
-        class="mb-10 flex flex-row space-x-[42px]">
+        class="mb-10 flex flex-row space-x-[30px] sm:space-x-[42px]">
         <span
           class="terminal:ring-lime-950 terminal:bg-lime-400 ml-[18px] mt-1 h-3 w-3 flex-none rounded-full bg-violet-600 ring-8 ring-stone-200 dark:ring-stone-900"></span>
         <span class="w-full space-y-1">
@@ -51,7 +51,7 @@ layout: custom
             class="font-semibold leading-none"
             @text="role.title"></p>
           <span
-            class="terminal:border-lime-600 flex flex-row justify-between border-b border-dashed border-stone-300 pb-4 pt-0.5 dark:border-stone-600">
+            class="terminal:border-lime-600 flex flex-col justify-between space-y-3 border-b border-dashed border-stone-300 pb-4 pt-0.5 sm:flex-row sm:space-y-0 dark:border-stone-600">
             <span class="flex space-x-3">
               <time-date
                 :date="role.dateStart"
@@ -72,7 +72,7 @@ layout: custom
               :end="role.dateEnd ? role.dateEnd : new Date()"></time-duration>
           </span>
           <p
-            class="py-3 text-lg/[1.8]"
+            class="py-3 text-base/[1.8] sm:text-lg/[1.8]"
             @html="role.description"></p>
         </span>
       </li>
