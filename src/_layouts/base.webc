@@ -73,7 +73,7 @@
     class="terminal:bg-transparent flex min-h-screen w-full flex-col bg-stone-200 dark:bg-stone-900">
     <a
       href="#content"
-      class="sr-only left-1/2 top-1.5 z-40 -translate-x-1/2 bg-stone-100 text-sm focus:not-sr-only focus:absolute focus:p-1.5 sm:top-2 dark:bg-stone-900"
+      class="terminal:bg-lime-950 terminal:text-lime:400 sr-only left-1/2 top-1.5 z-40 -translate-x-1/2 bg-stone-100 text-sm focus:not-sr-only focus:absolute focus:p-1.5 sm:top-2 dark:bg-stone-900"
       >skip to content</a
     >
     <header

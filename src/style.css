@@ -51,7 +51,7 @@
     @apply pointer-events-none inline-block;
   }
   a {
-    @apply focus:outline-none focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-violet-600;
+    @apply terminal:focus-visible:outline-lime-400 focus:outline-none focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-violet-400;
   }
   .content-body h1,
   .content-body h2,

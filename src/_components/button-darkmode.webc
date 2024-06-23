@@ -1,7 +1,7 @@
 <button
   id="theme-toggle"
   type="button"
-  class="terminal:bg-lime-900 inline-flex h-6 w-12 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-stone-300 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-600 dark:bg-stone-800"
+  class="terminal:bg-lime-900 terminal:focus:ring-lime-400 inline-flex h-6 w-12 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-stone-300 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-violet-600 dark:bg-stone-800"
   role="switch"
   aria-checked="false">
   <span class="relative flex h-full w-full items-center justify-between px-1">
