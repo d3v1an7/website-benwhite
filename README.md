@@ -29,4 +29,4 @@ npm run start
 ## To build later...
 
 - [ ] Search
-- [ ] Terminal mode
+- [x] Terminal mode
