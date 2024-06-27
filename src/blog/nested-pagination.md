@@ -84,6 +84,6 @@ Clean as!
 
 ### TLDR;
 
-- As of today, 11ty only supports a single layer/round of pagination.
+- As of today, 11ty only supports a single data set for pagination, and does not have a method to handle further pagination of any nested data sets.
 - You can work around this by creating a flat array, where each object contains enough info to build a single page.
 - Where you do this work is totally up to you. I like to do it in `_data`, not in the template.
