@@ -7,10 +7,12 @@ layout: base
   class="wrapper padding-x padding-y width-reading flex-grow">
   <article class="content-body">
     <header class="mb-10">
-      <p
-        webc:for="item of filteredTags(tags)"
-        class="tag !mb-6"
-        @text="`#${item}`"></p>
+      <span class="flex space-x-3">
+        <p
+          webc:for="item of filteredTags(tags)"
+          class="tag !mb-6"
+          @text="`#${item}`"></p>
+      </span>
       <h1
         webc:if="title"
         @text="title"></h1>

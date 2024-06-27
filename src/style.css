@@ -65,6 +65,12 @@
   .content-body .standfirst {
     @apply mb-6 text-pretty text-2xl/[1.8];
   }
+  .content-body pre {
+    @apply terminal:bg-lime-950 mb-10 text-wrap break-words rounded-md bg-stone-300 p-3 text-sm sm:text-base dark:bg-stone-950;
+  }
+  .content-body code {
+    @apply terminal:bg-lime-950 rounded-md bg-stone-300 p-0.5 text-sm sm:text-base dark:bg-stone-950;
+  }
   .content-body ul {
     @apply mb-10 list-disc;
   }

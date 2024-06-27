@@ -30,17 +30,23 @@ export const configTransforms = {
       const openingDoubleQuote = /(^|[\s(\[{<])"/g;
       const closingSingleQuote = /'/g;
       const closingDoubleQuote = /"/g;
+      const emDash = /--/g;
       return text
         .replace(openingSingleQuote, '$1\u2018') // Opening single quote ‘ (U+2018)
         .replace(closingSingleQuote, '\u2019') // Closing single quote ’ (U+2019)
         .replace(openingDoubleQuote, '$1\u201C') // Opening double quote “ (U+201C)
-        .replace(closingDoubleQuote, '\u201D'); // Closing double quote ” (U+201D)
+        .replace(closingDoubleQuote, '\u201D') // Closing double quote ” (U+201D)
+        .replace(emDash, '\u2014'); // Em dash — (U+2014)
     }
     function processNodes(node) {
       node.contents().each((_index, element) => {
         if (element.type === 'text') {
           element.data = convertToCurlyQuotes(element.data);
-        } else if (element.type === 'tag') {
+        } else if (
+          element.type === 'tag' &&
+          element.name !== 'code' &&
+          element.name !== 'pre'
+        ) {
           processNodes($(element));
         }
       });

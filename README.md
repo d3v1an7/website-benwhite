@@ -16,10 +16,6 @@ Changes to the `main` branch will kick off a build and deploy to [benwhite.com.a
 ## Local development
 
 ```
-# Deps
-brew install nodenv
-nodenv install
-
 # Site
 git clone git@github.com:d3v1an7/website.git ~/workspace/website && cd ~/workspace/website
 npm install
