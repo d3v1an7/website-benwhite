@@ -7,7 +7,7 @@ tags:
   - 11ty
 ---
 
-Let's kick off with a caveat: I don't rely on 11ty collections for indexes and loops and stuff. I pull down the data I need from a CMS, get it into shape, then use the cleaned up data in WebC template files. This keeps almost all data related transformations in one place (the data file), and allows the templates to be super clean.
+Let's kick off with a caveat: I don't rely on 11ty collections for building indexes and loops and stuff. I pull down the data I need from a CMS, get it into shape, then use the cleaned up data in WebC template files. This keeps almost all data related transformations in one place (the data file), and allows the templates to be super clean.
 
 Everything that follows here is based on that usage of 11ty data, but I reckon you should be able to follow a similar pattern when building a new collection, if that's more your jam.
 
@@ -23,7 +23,7 @@ const articles = [
     title: 'Another example',
     authors: [{ slug: 'finn-human' }],
   },
-  [etc]
+  [etc...]
 ]
 ```
 
@@ -31,7 +31,7 @@ Now, we want to create some author indexes (`/author/jake-dog/`), that are also 
 
 A data structure that I reckon makes sense here is an array of authors that each have an array of articles.
 
-Unfortunately for us, 11ty pagination expects a single, flat array, so unless we're up for manually writing a template file for every single author (no thank you), we need to come up with something clever. Inspired by [this post](https://www.codeflood.net/blog/2024/04/17/11ty-nested-pagination/) and [this thread](https://github.com/11ty/eleventy/issues/332), I ended up forming an array of authors that instead looked like this:
+Unfortunately for us, 11ty pagination only handles a single data set: you can either loop through the authors, or the authors articles, not both. We _could_ solve this by just creating an individual template file for every author, but that doesn't sound like fun. Let's come up with something cleverer! Inspired by [this post](https://www.codeflood.net/blog/2024/04/17/11ty-nested-pagination/) and [this thread](https://github.com/11ty/eleventy/issues/332), I ended up forming an array of authors that instead looked like this:
 
 ```
 const authors = [
@@ -50,7 +50,7 @@ const authors = [
     author: 'susan-strong',
     articles: [ [Object], [Object], [Object] ]
   },
-  [etc]
+  [etc...]
 ]
 ```
 
@@ -60,20 +60,19 @@ Now we have a flat array, where each object represents an author index page to b
 ---js
 {
   pagination: {
-    addAllPagesToCollections: true,
-    alias: 'item',
     data: 'all.authors',
+    alias: 'item',
     size: 1,
   },
-  permalink: function ({ item }) {
-	  return item.path;
+  permalink: ({ item }) => {
+    return item.path;
   }
 }
 ---
 
 <h1 @text="item.author"></h1>
-<ul webc:for="story of item.articles">
-  <li @text="story.title"></li>
+<ul webc:for="article of item.articles">
+  <li @text="article.title"></li>
 </ul>
 ```
 
