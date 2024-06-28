@@ -8,6 +8,7 @@ const cl = new ConsoleLogger();
 
 export const configTransforms = {
   addTargetToLinks(content) {
+    if (!this.outputPath.endsWith('.html')) return content;
     const $ = cheerio.load(content);
     $('a').each((index, element) => {
       const href = $(element).attr('href');
