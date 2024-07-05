@@ -62,6 +62,9 @@
   .content-body p {
     @apply mb-8 sm:mb-12;
   }
+  .content-body h3 {
+    @apply mb-4 sm:mb-6;
+  }
   .content-body .standfirst {
     @apply mb-6 text-pretty text-2xl/[1.8];
   }
