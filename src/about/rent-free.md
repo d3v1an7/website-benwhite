@@ -43,3 +43,6 @@ layout: page
 - [Trogdor](https://www.youtube.com/watch?v=90X5NJleYJQ)
 - [Head asplode](https://www.youtube.com/watch?v=R22zSrpeSA4)
 - [Three... noses?](https://www.youtube.com/watch?v=CYLxg9bqKZY)
+- [Shinbashi](https://www.youtube.com/watch?v=fYT9KwNg4jc)
+- [Kikkoman](https://www.youtube.com/watch?v=Wz-mJed_bP0)
+- [Chocolate](https://www.youtube.com/watch?v=X23mFpFsgkw)
