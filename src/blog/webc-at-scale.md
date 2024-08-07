@@ -11,7 +11,7 @@ When setting out to build _Capital Brief_, 11ty (v2 at the time) supported [on-d
 
 This gave us predicable build times and ensured the pages we expected humans to read were super fast.
 
-Sounds good right? Unfortunately:
+Sounds good right? Unfortunately for me:
 
 - The latest version of 11ty (v3 at time of writing) removes the Netlify based serverless plugin, and
 - The long tail of on-demand pages (which by design, are a bit slower on first access) has a negative impact in Google PageSpeed Insights
