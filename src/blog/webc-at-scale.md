@@ -2,6 +2,10 @@
 title: WebC at scale
 standfirst: Some things to check when going from hundreds to thousands.
 date: 2024-08-07
+tags:
+  - tech
+  - 11ty
+  - webc
 ---
 
 When setting out to build _Capital Brief_, 11ty (v2 at the time) supported [on-demand builders in Netlify](https://www.netlify.com/blog/2021/04/14/faster-builds-for-large-sites-on-netlify-with-on-demand-builders-now-in-early-access/) via the [11ty serverless plugin](https://www.11ty.dev/docs/plugins/serverless/). This allowed me to use a build strategy along the lines of:

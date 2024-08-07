@@ -2,6 +2,9 @@
 title: Magic links are great, until they're not
 standfirst: People using these things we build don't care about our good intentions, or how well the thing works for others. They just want the thing to work for them.
 date: 2024-06-19
+tags:
+  - tech
+  - auth
 ---
 
 It was a short discussion when determining the auth method for [Capital Brief](https://www.capitalbrief.com/). Some flavour of passwordless was a must, and when thinking back to passwordless experiences that brought me joy, Slack came to mind.

@@ -5,6 +5,7 @@ date: 2024-06-27
 tags:
   - tech
   - 11ty
+  - webc
 ---
 
 Let's kick off with a caveat: I don't rely on 11ty collections for building indexes and loops and stuff. I pull down the data I need from a CMS, get it into shape, then use the cleaned up data in WebC template files. This keeps almost all data related transformations in one place (the data file), and allows the templates to be super clean.
