@@ -68,6 +68,9 @@
   .content-body .standfirst {
     @apply mb-6 text-pretty text-2xl/[1.8];
   }
+  p + pre {
+    @apply -mt-6 sm:-mt-8;
+  }
   .content-body pre {
     @apply terminal:bg-lime-950 mb-10 text-wrap break-words rounded-md bg-stone-300 p-3 text-sm sm:text-base dark:bg-stone-950;
   }
