@@ -1,6 +1,6 @@
 ---
 title: The last Gambino
-standfirst: Are we gonna die? Not tonight!
+standfirst: '"Are we gonna die?" "Not tonight!"'
 date: 2024-07-25
 tags: music
 ---

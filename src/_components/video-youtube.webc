@@ -1,4 +1,6 @@
-<lite-youtube :videoid="id">
+<lite-youtube
+  :videoid="id"
+  class="w-auto lg:-mx-20 lg:h-[558px] xl:-mx-48 xl:h-[684px]">
   <a
     class="lite-youtube-fallback"
     :href="`https://www.youtube.com/watch?v=${id}`"
