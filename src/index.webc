@@ -14,8 +14,8 @@ layout: index
     <template
       webc:nokeep
       @text="yearsSince('2011-10-01')"></template>
-    years, across a mix of hands-on engineering, management and leadership. I
-    have found my happy place at
+    years, across a mix of hands-on engineering and leadership. I have found my
+    happy place at
     <a
       class="link-underline"
       href="https://www.capitalbrief.com/">
