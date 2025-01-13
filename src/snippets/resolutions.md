@@ -12,5 +12,6 @@ My new year (tech) resolutions are to have some fun with:
 - [**CUBE CSS**](https://cube.fyi/) Would this methodology be worth adopting? What problems does it solve?
 - [**htmx**](https://htmx.org/) I'm very happy with static build + Alpine.js, what benefits would `htmx` provide?
 - [**11ty docs**](https://github.com/11ty/eleventy/issues/3388) I dropped the ball on this last year. I'd like to make a meaningful contribution towards the docs this year.
+- [**Pixelfed**](https://pixelfed.org/) After spinning up a private instance, would I be able to get my friends and family to delete Instagram?
 
 What are your tech resolutions? [Let me know](https://infosec.exchange/@d3v1an7)!
