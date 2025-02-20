@@ -6,13 +6,13 @@ layout: page
 
 ### PC
 
-- CPU: AMD Ryzen 5 7600 (since 2023)
+- CPU: AMD Ryzen 7 7800X3D (since 2024)
 - RAM: Corsair Vengeance 32GB (since 2023)
-- GFX: ASUS ROG Strix GeForce RTX 3080 OC EVA Edition (since 2022)
+- GFX: ASUS TUF Gaming GeForce 4080 16GB (since 2024)
 - MB: ASUS ROG Strix B650E-I (since 2023)
 - Cooling: NZXT Kraken X53 (since 2022)
 - PSU: Corsair SF750 SFX (since 2022)
-- Case: Lian Li x DAN Cases A4-H20 (since 2022)
+- Case: Lian Li x DAN Cases A3-MATX (since 2024)
 
 ### Laptop
 
