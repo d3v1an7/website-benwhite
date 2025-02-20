@@ -17,11 +17,11 @@ I went down the Google rabbit hole, trying to work out who the band was. At that
 
 At some point I added a few Clown Core songs to some playlists in Spotify, and this _Louis Cole_ guy started popping up in my recommendations.
 
-I eventually came across this song and was like yep, these guys are is absolutely, 100%, Clown Core.
+I eventually came across this song and was like yep, this artist and friends are absolutely, 100%, Clown Core.
 
 <video-youtube webc:nokeep id="_1PdtPuaS-k"></video-youtube>
 
-Didn't take me too long to then stumble into KNOWER, and this track, which might be a top 5 of all time song for me. This song is just the coolest song ever. Every person in the clip is the coolest, most talented person I've ever seen.
+Didn't take me too long to then stumble into KNOWER and this track, which might be a top 5 of all time song for me. It is just the coolest song ever. Every person in the clip is the coolest, most talented person I've ever seen.
 
 <video-youtube webc:nokeep id="Ois3gfcwKSA"></video-youtube>
 
