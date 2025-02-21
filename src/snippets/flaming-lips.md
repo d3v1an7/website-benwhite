@@ -18,5 +18,3 @@ The crowd last night was a mix of families with young kids (babies, even!), uni 
 The highlight for me was _Pompeii am Götterdämmerung_, being blanketed in black confetti. Yay, volcanoes!
 
 If you haven't seen them live, do yourself a favour and grab a ticket when they're in your town.
-
-All we have is now. All we'll ever have is now.
