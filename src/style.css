@@ -22,6 +22,13 @@
   .width-reading {
     @apply max-w-4xl;
   }
+  @font-face {
+    font-family: 'Citywide Variable';
+    src: url('/citywide-variable.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+  }
 }
 
 @layer components {
@@ -31,7 +38,10 @@
   h4,
   h5,
   h6 {
-    @apply terminal:text-lime-400 terminal:font-mono text-pretty font-sans text-xl/[1.8] font-bold uppercase text-stone-900 sm:text-2xl/[1.8] dark:text-stone-50;
+    @apply terminal:text-lime-400 terminal:font-mono font-citywide text-pretty text-xl/[1.8] uppercase tracking-wide text-stone-900 antialiased sm:text-2xl/[1.8] dark:text-stone-50;
+    font-variation-settings:
+      'wght' 500,
+      'wdth' 200;
   }
   h1,
   h2 {
