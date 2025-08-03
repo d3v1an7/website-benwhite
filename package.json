@@ -6,13 +6,15 @@
   "license": "ISC",
   "type": "module",
   "scripts": {
-    "build": "NODE_ENV=production npx @11ty/eleventy",
-    "serve": "NODE_ENV=production npx @11ty/eleventy --serve --quiet",
-    "debug": "DEBUG=Eleventy* npm run serve",
-    "benchmark": "DEBUG=Eleventy:Benchmark* npm run build",
-    "rimraf": "npx rimraf _site",
-    "killport": "npx kill-port --port 8080",
-    "start": "npm-run-all rimraf killport serve"
+    "11ty:build": "npx @11ty/eleventy",
+    "11ty:watch": "npx @11ty/eleventy --watch --quiet --ignore-initial",
+    "11ty:benchmark": "DEBUG=Eleventy:Benchmark* npm run build",
+    "build": "11ty:build",
+    "util:rimraf": "npx rimraf _site",
+    "util:killport": "npx kill-port --port 8787",
+    "start": "npm-run-all util:rimraf util:killport 11ty:build --parallel 11ty:watch wrangler:dev",
+    "wrangler:dev": "npx wrangler dev --live-reload",
+    "wrangler:deploy": "npx wrangler deploy"
   },
   "dependencies": {
     "@11ty/eleventy": "3.1.2",
@@ -37,6 +39,7 @@
     "kill-port": "^2.0.1",
     "npm-run-all": "^4.1.5",
     "prettier-plugin-tailwindcss": "^0.6.14",
-    "rimraf": "^6.0.1"
+    "rimraf": "^6.0.1",
+    "wrangler": "^4.27.0"
   }
 }
