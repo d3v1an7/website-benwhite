@@ -1,10 +1,7 @@
 import { minify } from 'html-minifier-terser';
 import * as prettier from 'prettier';
 import xmlFormat from 'xml-formatter';
-import ConsoleLogger from '@11ty/eleventy/src/Util/ConsoleLogger.js';
 import * as cheerio from 'cheerio';
-
-const cl = new ConsoleLogger();
 
 export const configTransforms = {
   addTargetToLinks(content) {
@@ -17,8 +14,9 @@ export const configTransforms = {
       } else {
         $(element).attr('target', '_blank');
       }
-      cl.info(
-        `Modified link: ${$(element).attr('href')} => ${$(element).attr('target')}`,
+      console.log(
+        'Modified link',
+        `${$(element).attr('href')} => ${$(element).attr('target')}`,
       );
     });
     return $.html();
@@ -72,16 +70,14 @@ export const configTransforms = {
       htmlWhitespaceSensitivity: 'css',
       parser: this.page.outputFileExtension,
     };
-    cl.info(`Minified: ${this.outputPath}`);
+    console.log('Minified', this.outputPath);
     // Prettier slows down the build a bit, but we're still in the seconds range, and the output is lovely, so why not.
     return prettier.format(minifiedContent, prettierOptions);
   },
   async formatXml(content) {
     if (!this.outputPath.endsWith('.xml')) return content;
-    cl.info(`Formatted: ${this.outputPath}`);
-    const formatOptions = {
-      collapseContent: true,
-    };
+    console.log('Formatted', this.outputPath);
+    const formatOptions = { collapseContent: true };
     return xmlFormat(content, formatOptions);
   },
 };
