@@ -1,11 +1,6 @@
 {
   "name": "website-benwhite",
-  "main": "src/index.js",
   "compatibility_date": "2025-05-05",
-  "assets": {
-    "binding": "ASSETS",
-    "directory": "_site",
-    "not_found_handling": "404-page",
-  },
+  "assets": { "directory": "_site", "not_found_handling": "404-page" },
   "routes": [{ "pattern": "benwhite.com.au", "custom_domain": true }],
 }

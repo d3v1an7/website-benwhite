@@ -15,6 +15,9 @@ layout: page
 ### Books (fiction)
 
 - [Southern Reach Trilogy](https://app.thestorygraph.com/books/7ec6605b-104e-43ec-8b2a-6cc32a3256d2)
+- [The Three-Body Problem: Remembrance of Earth's Past](https://app.thestorygraph.com/books/e48bb020-9c8a-480d-9e9f-9eab98075321)
+- [Tomorrow, and Tomorrow, and Tomorrow](https://app.thestorygraph.com/books/d57e098f-82dc-41f1-94f3-8fcb02dfab1b)
+- [Musashi](https://app.thestorygraph.com/books/e92da052-f353-4b18-b923-b4f841552545)
 
 ### Clips
 
