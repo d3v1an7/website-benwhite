@@ -96,6 +96,10 @@ If everything is all okay, run the deploy script `npm run wrangler:deploy` (or j
 
 NOTE: If you set up your domain as a route in the `wrangler.jsonc` but Cloudflare DNS already has a record assigned for that domain/subdomain, you will likely get an error here. You'll need to manually delete it via the Cloudflare DNS web UI before you're allowed to deploy. Keep a screenshot of those settings before removing, just in case you want to roll back.
 
+### 5. Optional: Connect the Worker to your Git repo
+
+This is optional. If you're fine running the build and deploy commands locally and manually, you don't need this. Enabling this connection will ensure any merge to `main` will kick of a new build and deploy in Cloudflare instead. I couldn't find a way to configure this in `wrangler.jsonc` yet, but [the docs recommend creating this links via the UI in any case](https://developers.cloudflare.com/workers/ci-cd/builds/).
+
 And you're done!
 
 I'll dive into moving functions over soon. Until then, I've shared some [example `wrangler` config snippets that should hopefully give you a head start](/snippets/pages-to-workers-config/).
