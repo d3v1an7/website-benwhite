@@ -52,6 +52,7 @@ Below is an example for my site, you can fill in the blanks.
 
 - `name`: This will be the name of the Worker in the Cloudflare UI, which is only public if you choose to use the `{worker-name}.workers.dev` URL for anything
 - `assets.directory`: You only need to update this if you've set 11ty up to build somewhere else, `_site` is the default 11ty build path
+- `assets.not_found_handling`: This will direct users to the `404.html` file in your `_site` directory. If you don't have a 404 file in your project, or would like to handle 404s differently, [have a browse through the routing behaviour docs](https://developers.cloudflare.com/workers/static-assets/#routing-behavior). There is also [a neat diagram on how the worker makes routing choices here](https://developers.cloudflare.com/workers/static-assets/routing/static-site-generation/#reference).
 - `routes[0].pattern`: Make sure you add the `www.` to your own domain, if that's how your site is currently set up!
 
 The assets config is basically the most important bit, and tells the Worker where to find all the files for your site build. The [Static Assets docs have a bunch more detail](https://developers.cloudflare.com/workers/static-assets/).
@@ -105,3 +106,7 @@ And you're done!
 I'll dive into moving functions over soon. Until then, I've shared some [example `wrangler` config snippets that should hopefully give you a head start](/snippets/pages-to-workers-config/).
 
 If you're getting stuck with your move, I'm happy to chat and help where I can, just ping me on [Mastodon](https://infosec.exchange/deck/@d3v1an7).
+
+### Thank yous
+
+Big thank you [Cassey Lottman](https://ottawa.place/@cassey) for their [helpful feedback on `not_found_handling`](https://ottawa.place/@cassey/114994652655776365)!
