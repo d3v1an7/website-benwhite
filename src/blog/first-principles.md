@@ -8,9 +8,11 @@ tags:
 
 In a meeting room in 2016, my ears perked up. A much smarter person than me had taken a moment to reflect and said, “Let’s bring this back to first principles”. I nodded like I knew what that meant. I mean, I had a general idea... but I didn’t know about the secret power of that incantation.
 
-Many times since, I’ve seen those words duck and weave past the strongest egos, opinions, and personalities. I could enter rooms with wildly complex problems, each with endless, conflicting potential solutions, and somehow leave with everyone pointed in the same direction.
+Many times since, I’ve seen those words duck and weave past the strongest egos, opinions, and personalities. I could enter rooms with wildly complex problems, each with endless, conflicting potential solutions, and somehow leave with everyone pointed in the same direction, nodding like Robert Redford.
 
-At Capital Brief, we’re a very tight, very small team, so dropping the “first principles” incantation is less about working past differences and more about getting to answers quickly and consistently.
+<img src="../../public/redford.gif" alt="Animated image of Robert Redford, the camera moves towards his face slowly, and he nods. The image fills you with satisfaction.">
+
+The “first principles” spell was never cast to shut down conversations. It was cast to target sunlight and burn off thick fog, bringing the real, underlying problems we're trying to solve into focus. And it worked really well!
 
 Recently, I’ve been trying to get my head around when we should do the heavy lifting for a new feature. The answer had been different for various bits and pieces, and I wanted a system I could use that made it easier to reason and explain.
 

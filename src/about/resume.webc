@@ -21,7 +21,8 @@ layout: custom
       <a :href="job.companyUrl">
         <img
           class="terminal:ring-lime-950 flex h-12 w-12 rounded-md ring-8 ring-stone-200 dark:ring-stone-900"
-          :src="job.companyLogo" />
+          :src="job.companyLogo"
+          :alt="`Logo for ${job.companyName}`" />
       </a>
       <span class="flex flex-col space-y-1">
         <a :href="job.companyUrl">

@@ -1,6 +1,7 @@
 import bundlerPlugin from '@11ty/eleventy-plugin-bundle';
 import { feedPlugin } from '@11ty/eleventy-plugin-rss';
 import webc from '@11ty/eleventy-plugin-webc';
+import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
 import { configCollections } from './config/collections.js';
 import { configFeeds } from './config/feeds.js';
 import { configFilters } from './config/filters.js';
@@ -36,6 +37,10 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ './public/': '/' });
   eleventyConfig.addPlugin(webc, configPlugins.webc);
   eleventyConfig.addPlugin(bundlerPlugin, configPlugins.bundler);
+  eleventyConfig.addPlugin(
+    eleventyImageTransformPlugin,
+    configPlugins.eleventyImage,
+  );
   eleventyConfig.addTransform(
     'addTargetToLinks',
     configTransforms.addTargetToLinks,

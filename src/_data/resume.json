@@ -1,7 +1,7 @@
 [
   {
     "companyName": "Capital Brief",
-    "companyLogo": "/logo-capital-brief.jpg",
+    "companyLogo": "../../public/logo-capital-brief.jpg",
     "companyUrl": "https://www.capitalbrief.com/",
     "roles": [
       {
@@ -13,7 +13,7 @@
   },
   {
     "companyName": "Fairfax Media / Nine",
-    "companyLogo": "/logo-nine.jpg",
+    "companyLogo": "../../public/logo-nine.jpg",
     "companyUrl": "https://www.nineforbrands.com.au/",
     "roles": [
       {
@@ -32,7 +32,7 @@
   },
   {
     "companyName": "Mamamia",
-    "companyLogo": "/logo-mamamia.jpg",
+    "companyLogo": "../../public/logo-mamamia.jpg",
     "companyUrl": "https://www.mamamia.com.au/",
     "roles": [
       {
@@ -45,7 +45,7 @@
   },
   {
     "companyName": "Allure Media",
-    "companyLogo": "/logo-allure-media.jpg",
+    "companyLogo": "../../public/logo-allure-media.jpg",
     "companyUrl": "https://pedestriangroup.com.au/",
     "roles": [
       {
@@ -58,7 +58,7 @@
   },
   {
     "companyName": "eBrands",
-    "companyLogo": "/logo-ebrands.jpg",
+    "companyLogo": "../../public/logo-ebrands.jpg",
     "companyUrl": "https://www.ebrands.com.au/",
     "roles": [
       {
@@ -71,7 +71,7 @@
   },
   {
     "companyName": "Bemm",
-    "companyLogo": "/logo-bemm.jpg",
+    "companyLogo": "../../public/logo-bemm.jpg",
     "companyUrl": "https://www.bemm.com.au/",
     "roles": [
       {

@@ -111,6 +111,12 @@
   .content-body blockquote cite {
     @apply not-italic;
   }
+  .content-body picture {
+    @apply mb-8 block w-full sm:mb-12 lg:-mx-20 lg:w-[calc(100%+10rem)] xl:-mx-48 xl:w-[calc(100%+24rem)];
+  }
+  .content-body picture img {
+    @apply h-auto w-full;
+  }
   .content-summary h3 {
     @apply mb-1;
   }
