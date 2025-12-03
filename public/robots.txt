@@ -1,1 +1,4 @@
+User-agent: *
+Disallow: /visual-essay-example.htm
+
 Sitemap: https://benwhite.com.au/sitemap.xml

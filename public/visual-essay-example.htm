@@ -1,0 +1,1101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fashion That Saves Your Life – ARC Raiders</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1" />
+    <meta
+      name="robots"
+      content="noindex, nofollow" />
+    <!-- Fonts -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Serif+Display&display=swap"
+      rel="stylesheet" />
+
+    <style>
+      :root {
+        --bg: #05070b;
+        --bg-alt: #0b0f18;
+        --text: #f4f5f7;
+        --muted: #a4a9b8;
+        --accent: #f9ce4f;
+        --accent-soft: rgba(249, 206, 79, 0.1);
+        --border-subtle: rgba(255, 255, 255, 0.06);
+        --max-width: 960px;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        background: radial-gradient(
+          circle at top,
+          #111827 0,
+          #020308 45%,
+          #000 100%
+        );
+        color: var(--text);
+        font-family:
+          'Space Grotesk',
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          sans-serif;
+        line-height: 1.7;
+      }
+
+      body {
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .page {
+        min-height: 100vh;
+        color: var(--text);
+      }
+
+      /* Hero */
+      .hero {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6rem 1.5rem 4rem;
+        overflow: hidden;
+        isolation: isolate;
+      }
+
+      .hero::before,
+      .hero::after {
+        content: '';
+        position: absolute;
+        inset: -20%;
+        background:
+          radial-gradient(
+            circle at 10% 0,
+            rgba(147, 197, 253, 0.22),
+            transparent 55%
+          ),
+          radial-gradient(
+            circle at 90% 20%,
+            rgba(248, 250, 252, 0.15),
+            transparent 55%
+          ),
+          radial-gradient(
+            circle at 50% 120%,
+            rgba(248, 113, 113, 0.2),
+            transparent 60%
+          );
+        opacity: 0.9;
+        z-index: -2;
+      }
+
+      .hero::after {
+        filter: blur(40px);
+        opacity: 0.7;
+      }
+
+      .hero-inner {
+        max-width: var(--max-width);
+        width: 100%;
+        display: grid;
+        grid-template-columns: minmax(0, 3fr) minmax(0, 2.5fr);
+        gap: 3.5rem;
+        align-items: center;
+      }
+
+      @media (max-width: 900px) {
+        .hero-inner {
+          grid-template-columns: minmax(0, 1fr);
+        }
+      }
+
+      .hero-heading {
+        font-family:
+          'DM Serif Display', ui-serif, Georgia, 'Times New Roman', serif;
+        font-size: clamp(2.9rem, 4vw, 3.6rem);
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        line-height: 1.08;
+        margin-bottom: 1.25rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.1rem;
+        color: var(--muted);
+        max-width: 34rem;
+        margin-bottom: 2rem;
+      }
+
+      .hero-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem 1.5rem;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: var(--muted);
+      }
+
+      .hero-pill {
+        padding: 0.3rem 0.85rem;
+        border-radius: 999px;
+        border: 1px solid rgba(249, 206, 79, 0.6);
+        background: rgba(6, 10, 20, 0.75);
+        color: var(--accent);
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+      }
+
+      .hero-pill span.dot {
+        width: 0.4rem;
+        height: 0.4rem;
+        border-radius: 999px;
+        background: var(--accent);
+        box-shadow: 0 0 0 6px rgba(249, 206, 79, 0.25);
+      }
+
+      .hero-media {
+        position: relative;
+        border-radius: 24px;
+        border: 1px solid rgba(148, 163, 184, 0.35);
+        background: radial-gradient(
+          circle at top,
+          #0f172a 0,
+          #020617 60%,
+          #000 100%
+        );
+        box-shadow:
+          0 24px 80px rgba(15, 23, 42, 0.9),
+          0 0 0 1px rgba(15, 23, 42, 0.8);
+        overflow: hidden;
+      }
+
+      .hero-media::before {
+        content: 'FIELD NOTES // ARC RAIDERS';
+        position: absolute;
+        top: 1rem;
+        left: 1.4rem;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        color: rgba(148, 163, 184, 0.85);
+        z-index: 2;
+      }
+
+      .hero-media-frame {
+        position: relative;
+        padding-top: 56.25%;
+        overflow: hidden;
+        border-radius: 18px;
+        margin: 2.8rem 1.4rem 1.4rem;
+      }
+
+      .hero-media-frame iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        border-radius: inherit;
+      }
+
+      .hero-caption {
+        padding: 0 1.5rem 1.5rem;
+        font-size: 0.86rem;
+        color: var(--muted);
+        border-top: 1px solid rgba(148, 163, 184, 0.3);
+        background: linear-gradient(
+          to bottom,
+          rgba(15, 23, 42, 0.9),
+          rgba(15, 23, 42, 0.96)
+        );
+      }
+
+      /* Body layout */
+      main {
+        padding: 3rem 1.5rem 5rem;
+      }
+
+      .chapters {
+        max-width: 1120px;
+        margin: 0 auto;
+      }
+
+      .chapter {
+        display: grid;
+        grid-template-columns: minmax(0, 3fr) minmax(0, 2.8fr);
+        gap: 3rem;
+        align-items: center;
+        padding: 4rem 0;
+        border-bottom: 1px solid var(--border-subtle);
+      }
+
+      .chapter:last-child {
+        border-bottom: none;
+      }
+
+      @media (max-width: 960px) {
+        .chapter {
+          grid-template-columns: minmax(0, 1fr);
+          padding: 3.25rem 0;
+        }
+      }
+
+      .chapter:nth-child(odd) {
+        grid-template-columns: minmax(0, 2.8fr) minmax(0, 3fr);
+      }
+
+      @media (max-width: 960px) {
+        .chapter:nth-child(odd) {
+          grid-template-columns: minmax(0, 1fr);
+        }
+      }
+
+      .chapter-kicker {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        color: var(--muted);
+        margin-bottom: 0.6rem;
+      }
+
+      .chapter-title {
+        font-family:
+          'DM Serif Display', ui-serif, Georgia, 'Times New Roman', serif;
+        font-size: 1.9rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+      }
+
+      .chapter-lede {
+        font-size: 1.02rem;
+        color: var(--muted);
+        margin-bottom: 1.5rem;
+      }
+
+      .chapter-body p {
+        margin-bottom: 1.1rem;
+        font-size: 0.98rem;
+        color: #e5e7eb;
+      }
+
+      .chapter-body p:last-child {
+        margin-bottom: 0;
+      }
+
+      .chapter-body em {
+        font-style: italic;
+        color: #e5e7eb;
+      }
+
+      .chapter-body strong {
+        font-weight: 600;
+      }
+
+      .chapter-media {
+        position: relative;
+      }
+
+      .chapter-media-inner {
+        position: sticky;
+        top: 96px;
+      }
+
+      .chapter-embed {
+        border-radius: 20px;
+        overflow: hidden;
+        border: 1px solid rgba(148, 163, 184, 0.4);
+        background: radial-gradient(
+          circle at top,
+          #020617 0,
+          #020617 60%,
+          #000 100%
+        );
+        box-shadow:
+          0 24px 80px rgba(15, 23, 42, 0.85),
+          0 0 0 1px rgba(15, 23, 42, 0.8);
+      }
+
+      .chapter-embed-frame {
+        position: relative;
+        padding-top: 56.25%;
+        overflow: hidden;
+      }
+
+      .chapter-embed-frame iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      .chapter-caption {
+        padding: 0.85rem 1rem 0.9rem;
+        font-size: 0.8rem;
+        color: var(--muted);
+        border-top: 1px solid rgba(148, 163, 184, 0.3);
+        background: radial-gradient(
+          circle at top,
+          rgba(15, 23, 42, 0.9),
+          rgba(15, 23, 42, 0.98)
+        );
+      }
+
+      .chapter-caption span.label {
+        font-size: 0.72rem;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: rgba(148, 163, 184, 0.9);
+        display: block;
+        margin-bottom: 0.25rem;
+      }
+
+      .chapter-caption a {
+        color: var(--muted);
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+      }
+
+      .pullquote {
+        margin: 1.6rem 0;
+        padding: 1.1rem 1.4rem;
+        border-left: 2px solid rgba(249, 206, 79, 0.9);
+        background: radial-gradient(
+          circle at 0 0,
+          rgba(249, 206, 79, 0.1),
+          transparent 60%
+        );
+        border-radius: 0 12px 12px 0;
+      }
+
+      .pullquote p {
+        font-size: 0.98rem;
+        font-style: italic;
+        color: #e5e7eb;
+      }
+
+      .pullquote span.attribution {
+        display: block;
+        margin-top: 0.45rem;
+        font-size: 0.8rem;
+        color: var(--muted);
+      }
+
+      .footnote {
+        font-size: 0.78rem;
+        color: var(--muted);
+        margin-top: 0.35rem;
+      }
+
+      .footnote a {
+        color: var(--muted);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      /* Outro */
+      .outro {
+        max-width: var(--max-width);
+        margin: 4rem auto 0;
+        padding-top: 3rem;
+        border-top: 1px solid var(--border-subtle);
+      }
+
+      .outro p {
+        font-size: 0.98rem;
+        color: #e5e7eb;
+        margin-bottom: 1.1rem;
+      }
+
+      .outro p:last-child {
+        margin-bottom: 0;
+      }
+
+      .byline {
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        color: var(--muted);
+        margin-bottom: 1.4rem;
+      }
+
+      /* Small tweaks */
+      @media (max-width: 720px) {
+        .chapter-media-inner {
+          position: static;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <div class="hero-inner">
+          <div>
+            <div class="hero-pill">
+              <span class="dot"></span>
+              <span>ARC Raiders // Visual Essay</span>
+            </div>
+
+            <h1 class="hero-heading">Fashion That Saves Your Life</h1>
+
+            <p class="hero-subtitle">
+              In ARC Raiders, your jacket speaks before you do. This is a field
+              report on how outfits, emotes and tiny fashion choices quietly
+              decide who waves, who walks, and who pulls the trigger.
+            </p>
+
+            <div class="hero-meta">
+              <span>Rust Belt, Topside</span>
+              <span>&bull;</span>
+              <span>Patch 1.4, Streamer War Era</span>
+              <span>&bull;</span>
+              <span>Solo / PvPvE</span>
+            </div>
+          </div>
+
+          <aside class="hero-media">
+            <div class="hero-media-frame">
+              <iframe
+                src="https://www.youtube.com/embed/zDMr1M5RpwI"
+                title="Arc Raiders - Why Clothing Is IMPORTANT!"
+                loading="lazy"
+                allowfullscreen></iframe>
+            </div>
+            <div class="hero-caption">
+              In-game creators have already started spelling it out: in ARC
+              Raiders, what you wear changes how people treat you. See: “Why
+              Clothing Is IMPORTANT!” on YouTube.
+            </div>
+          </aside>
+        </div>
+      </header>
+
+      <main>
+        <div class="chapters">
+          <!-- 1. The Jacket You Wear Is the First Thing You Say -->
+          <section
+            id="section-1"
+            class="chapter">
+            <article class="chapter-text">
+              <div class="chapter-kicker">01 // First Contact</div>
+              <h2 class="chapter-title">
+                The Jacket You Wear Is the First Thing You Say
+              </h2>
+              <p class="chapter-lede">
+                Before you crouch, wave, or spam an emote, your outfit has
+                already spoken on your behalf.
+              </p>
+              <div class="chapter-body">
+                <p>
+                  ARC Raiders is built on tension: extraction rules,
+                  third-person sightlines, and the constant question of whether
+                  the humans are more dangerous than the machines. It’s a PvPvE
+                  shooter, but the “social” layer starts long before any voice
+                  comms or text chat ever kicks in.
+                </p>
+
+                <p>
+                  Scroll the <em>Arc Raiders</em> subreddit and you see it
+                  spelled out in plain language: cosmetics have become their own
+                  shorthand. In a thread literally titled
+                  <a
+                    href="https://www.reddit.com/r/ArcRaiders/comments/1ouy9p9/arc_raiders_skins_and_what_they_mean/"
+                    target="_blank"
+                    rel="noopener">
+                    “Arc Raiders Skins and what they mean…” </a
+                  >, one raider writes:
+                </p>
+
+                <div class="pullquote">
+                  <p>
+                    “Everyone has been quick to adopt the fact that when you see
+                    any raiders wearing these skins, you basically shoot on
+                    sight…”
+                  </p>
+                  <span class="attribution"> – thren_FPS, r/ArcRaiders </span>
+                </div>
+
+                <p>
+                  Another player replies that they’ve been maining a particular
+                  jacket they just like the look of, only to be told by a friend
+                  that it’s considered a “sweat skin.” Suddenly, all those
+                  unfriendly encounters make sense: they were dressed like
+                  trouble, even when they weren’t acting like it.
+                </p>
+
+                <p>
+                  It’s the simplest rule on Topside: by the time someone has you
+                  centre-screen in their third-person camera, your coat has
+                  already delivered your opening line.
+                </p>
+              </div>
+            </article>
+
+            <aside class="chapter-media">
+              <div class="chapter-media-inner">
+                <div class="chapter-embed">
+                  <div class="chapter-embed-frame">
+                    <iframe
+                      src="https://www.youtube.com/embed/vlK7l05Y984"
+                      title="All 19 Outfits & Colors – ARC Raiders"
+                      loading="lazy"
+                      allowfullscreen></iframe>
+                  </div>
+                  <div class="chapter-caption">
+                    <span class="label">Reference</span>
+                    A catalogue of every launch outfit and colour variant turns
+                    the wardrobe into a visual language of its own: “Release ARC
+                    Raiders • All 19 OUTFITS &amp; COLORS”.
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </section>
+
+          <!-- 2. The Ryder Reputation -->
+          <section
+            id="section-2"
+            class="chapter">
+            <article class="chapter-text">
+              <div class="chapter-kicker">02 // Reputation</div>
+              <h2 class="chapter-title">The Ryder Reputation</h2>
+              <p class="chapter-lede">
+                Some outfits don’t just look aggressive – they’ve been annotated
+                by the community as “probably going to shoot first.”
+              </p>
+              <div class="chapter-body">
+                <p>
+                  Take the now-infamous black-and-orange Ryder skin. No one at
+                  Embark added a tooltip that says “Warning: this coat will get
+                  you pre-fired upon.” Players did that on their own.
+                </p>
+
+                <p>
+                  A hands-on preview at GameRant effectively warns cautious
+                  raiders to avoid it if they’re hoping for peaceful runs,
+                  summarising the vibe: if you don’t want to be treated like a
+                  hyper-aggressive PvP main, don’t dress like one.
+                </p>
+
+                <div class="pullquote">
+                  <p>
+                    “I’ve been shot in the back 99% of the time by players
+                    wearing this skin.”
+                  </p>
+                  <span class="attribution">
+                    – player reply in “Arc Raiders Skins and what they mean…”
+                  </span>
+                </div>
+
+                <p>
+                  The reputation feeds itself. High-skill or high-risk players
+                  gravitate to a certain silhouette, which makes the silhouette
+                  itself feel lethal, which in turn attracts more of the same
+                  mindset.
+                </p>
+
+                <p>
+                  The collateral damage is obvious: players who simply like the
+                  aesthetic find themselves forced into a choice between fashion
+                  and being allowed to exist in peace.
+                </p>
+              </div>
+            </article>
+
+            <aside class="chapter-media">
+              <div class="chapter-media-inner">
+                <div class="chapter-embed">
+                  <div class="chapter-embed-frame">
+                    <iframe
+                      src="https://www.youtube.com/embed/8jqsIUoYbIQ"
+                      title="THE Outfit Tier List | Arc Raiders"
+                      loading="lazy"
+                      allowfullscreen></iframe>
+                  </div>
+                  <div class="chapter-caption">
+                    <span class="label">Community Read</span>
+                    Tier lists like “THE Outfit Tier List | Arc Raiders” bake in
+                    soft labels like “sweaty”, “try-hard”, and “don’t trust this
+                    coat” – even when stats don’t change.
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </section>
+
+          <!-- 3. Friendly Fits -->
+          <section
+            id="section-3"
+            class="chapter">
+            <article class="chapter-text">
+              <div class="chapter-kicker">03 // Friendly Fits</div>
+              <h2 class="chapter-title">
+                How to Look Like You Didn’t Come Here for Blood
+              </h2>
+              <p class="chapter-lede">
+                Not everyone wants a duel at 30 metres. Some players build
+                entire wardrobes around being left alone – or being trusted.
+              </p>
+              <div class="chapter-body">
+                <p>
+                  In that same skins thread, one self-described “99% friendly”
+                  raider lays out their whole ethos: they intervene when someone
+                  gets jumped, they carry defibs to revive strangers, they’d
+                  rather lose gear than trust. Their outfit is part of that
+                  performance.
+                </p>
+
+                <div class="pullquote">
+                  <p>
+                    “I’m 99% friendly. If I see someone get jumped by another
+                    player I intervene. Sometimes I even bring defibs to revive
+                    others.”
+                  </p>
+                  <span class="attribution">
+                    – r/ArcRaiders player describing their playstyle
+                  </span>
+                </div>
+
+                <p>
+                  Informally, the community has started categorising certain
+                  looks as “arc hunter” or “friendly” skins – jackets and hats
+                  that read more like practical scavenger gear than elite
+                  operator cosplay. Cowboy hats, poncho-adjacent coats, and
+                  worn-in workwear are repeatedly mentioned as low-threat
+                  signals.
+                </p>
+
+                <p>
+                  It’s not foolproof. Nothing in this game is. But to anyone
+                  running solo and mostly chasing ARC rather than other players,
+                  dressing like a local who knows the dirt is often enough to
+                  get a nod instead of a test shot.
+                </p>
+              </div>
+            </article>
+
+            <aside class="chapter-media">
+              <div class="chapter-media-inner">
+                <div class="chapter-embed">
+                  <div class="chapter-embed-frame">
+                    <iframe
+                      src="https://www.youtube.com/embed/OS2u1ByELmo"
+                      title="Rocketeer Vs Cowboy – Arc Raiders"
+                      loading="lazy"
+                      allowfullscreen></iframe>
+                  </div>
+                  <div class="chapter-caption">
+                    <span class="label">Cowboy Energy</span>
+                    Clips like “Rocketeer Vs Cowboy On The Last Day Of The
+                    Playtest…” helped cement the cowboy look as its own
+                    archetype in the community.
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </section>
+
+          <!-- 4. The Double-Agent Problem -->
+          <section
+            id="section-4"
+            class="chapter">
+            <article class="chapter-text">
+              <div class="chapter-kicker">04 // Double Agents</div>
+              <h2 class="chapter-title">When Friendly Skins Go Bad</h2>
+              <p class="chapter-lede">
+                The moment everyone agrees that an outfit is safe, someone wears
+                it as camouflage.
+              </p>
+              <div class="chapter-body">
+                <p>
+                  For every cosy poncho medic, there’s at least one raider who
+                  looks exactly the same and is just waiting for you to turn
+                  your back. Players in the subreddit warn against putting too
+                  much faith in “nice” skins:
+                </p>
+
+                <div class="pullquote">
+                  <p>
+                    “Every single person I’ve come across wearing it will try to
+                    kill you in the scummiest way possible.”
+                  </p>
+                  <span class="attribution">
+                    – sceptical reply in a skins discussion thread
+                  </span>
+                </div>
+
+                <p>
+                  That’s the double-agent problem baked into any social signal:
+                  as soon as a look is widely recognised as harmless, it becomes
+                  incredibly useful to people who aren’t. Some players report
+                  swapping out of their favourite jackets not because of the
+                  stats, but because they don’t want to be mistaken for the
+                  wolves who’ve adopted the same coat.
+                </p>
+
+                <p>
+                  You can feel the tension between two truths at once:
+                  <em>clothes do affect how people treat you</em>, and
+                  <em>clothes are not a guarantee</em>. Anyone who forgets
+                  either part is going to have a short, confusing raid.
+                </p>
+              </div>
+            </article>
+
+            <aside class="chapter-media">
+              <div class="chapter-media-inner">
+                <div class="chapter-embed">
+                  <div class="chapter-embed-frame">
+                    <iframe
+                      src="https://www.youtube.com/embed/xBFzuRad_0U"
+                      title="Arc Raider's 'Chill Community' is Too Trusting"
+                      loading="lazy"
+                      allowfullscreen></iframe>
+                  </div>
+                  <div class="chapter-caption">
+                    <span class="label">Trust Issues</span>
+                    “Arc Raider’s ‘Chill Community’ is Too Trusting” captures
+                    the flip side of a friendly meta: bad actors get a lot of
+                    room to operate before people wise up.
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </section>
+
+          <!-- 5. Streamer Factions -->
+          <section
+            id="section-5"
+            class="chapter">
+            <article class="chapter-text">
+              <div class="chapter-kicker">05 // Colours of War</div>
+              <h2 class="chapter-title">
+                Streamer Factions and Accidental Allegiances
+              </h2>
+              <p class="chapter-lede">
+                At some point, outfits stopped being just individual expression
+                and became uniforms for entire fanbases.
+              </p>
+              <div class="chapter-body">
+                <p>
+                  In late 2025, the game tipped into something stranger: the
+                  <a
+                    href="https://www.pcgamer.com/games/third-person-shooter/a-gang-war-has-erupted-in-arc-raiders-and-a-victor-is-already-emerging-as-ninja-joins-the-bungulators-i-am-not-declaring-war-or-picking-sides-against-somebody-whose-afk-stream-gets-more-viewers-than-me/"
+                    target="_blank"
+                    rel="noopener">
+                    Arc Raiders streamer “gang war” </a
+                  >. Two Twitch personalities – TheBurntPeanut and HutchMF –
+                  turned a single kill clip into a full-scale community event,
+                  with factions, dress codes and all.
+                </p>
+
+                <p>
+                  Each side picked a palette and a set of skins. Fans dressed up
+                  accordingly. Anyone wearing the wrong colour in the wrong part
+                  of the map risked being treated as part of the enemy, whether
+                  they’d ever watched the streams or not.
+                </p>
+
+                <p>
+                  The war grew big enough to earn coverage from mainstream games
+                  media and esports sites, plus its own
+                  <a
+                    href="https://esportsinsider.com/arc-raiders-community-war-recap"
+                    target="_blank"
+                    rel="noopener">
+                    post-war recaps
+                  </a>
+                  for people who “have jobs and missed the drama.” It ended not
+                  with some decisive in-game battle, but with a Discord call and
+                  a tongue-in-cheek declaration of victory.
+                </p>
+
+                <p>
+                  But the lesson stuck: colours now mean something. Even after
+                  the war, players report avoiding certain red-tinted outfits
+                  because they don’t want to be drafted into someone else’s
+                  spectacle by accident.
+                </p>
+              </div>
+            </article>
+
+            <aside class="chapter-media">
+              <div class="chapter-media-inner">
+                <div class="chapter-embed">
+                  <div class="chapter-embed-frame">
+                    <iframe
+                      src="https://www.youtube.com/embed/17rQjHKzal4"
+                      title="Streamers Turned ARC Raiders Into War"
+                      loading="lazy"
+                      allowfullscreen></iframe>
+                  </div>
+                  <div class="chapter-caption">
+                    <span class="label">Faction Broadcast</span>
+                    “Streamers Turned ARC Raiders Into War” turns a fashion
+                    choice into a battle flag: entire lobbies coded by jacket
+                    and colour.
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </section>
+
+          <!-- 6. Reading the Room -->
+          <section
+            id="section-6"
+            class="chapter">
+            <article class="chapter-text">
+              <div class="chapter-kicker">06 // Reading the Room</div>
+              <h2 class="chapter-title">
+                Making Sense of Someone at 30 Metres
+              </h2>
+              <p class="chapter-lede">
+                Most encounters are decided in the first second – while both of
+                you are still pretending you’re just “passing through”.
+              </p>
+              <div class="chapter-body">
+                <p>
+                  Play enough solo and you start to recognise a whole body
+                  language meta layered over the outfits. The way someone peeks
+                  from behind cover, the timing of their wave emote, how long
+                  their weapon stays raised – all of it feeds into an instant
+                  calculation: is this going to be a wave, a walk-by, or a
+                  problem?
+                </p>
+
+                <p>
+                  The surprising part is how often people choose anything but
+                  violence. PC Gamer highlighted the phenomenon in a piece
+                  bluntly subtitled
+                  <em
+                    >“one of the chillest communities I’ve ever encountered”</em
+                  >, calling ARC Raiders the “anti-Tarkov” as solo players
+                  choose cooperation over free-for-all slaughter.
+                </p>
+
+                <p>
+                  That doesn’t mean people are naïve. The same article notes
+                  that gear loss, extraction rules, and long raid times all
+                  quietly push players towards caution. No one wants to throw
+                  away half an hour of progress on a coin-flip duel when a nod
+                  and a wide berth will do.
+                </p>
+
+                <p>
+                  Outfits slot cleanly into that equation. You’re not just
+                  reading a silhouette; you’re reading the kind of player who
+                  deliberately chose <em>that</em> silhouette, then watching to
+                  see if their behaviour matches the script.
+                </p>
+              </div>
+            </article>
+
+            <aside class="chapter-media">
+              <div class="chapter-media-inner">
+                <div class="chapter-embed">
+                  <div class="chapter-embed-frame">
+                    <iframe
+                      src="https://www.youtube.com/embed/cJvP6fdyjI4"
+                      title="ARC Raiders - Official Gameplay Trailer"
+                      loading="lazy"
+                      allowfullscreen></iframe>
+                  </div>
+                  <div class="chapter-caption">
+                    <span class="label">Atmosphere</span>
+                    The official gameplay trailer doubles as a mood board for
+                    these long-range stand-offs: silhouettes on ridgelines,
+                    muted colours, and long moments where no one quite commits.
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </section>
+
+          <!-- 7. Dressing for the Ending You Want -->
+          <section
+            id="section-7"
+            class="chapter">
+            <article class="chapter-text">
+              <div class="chapter-kicker">07 // Outcomes</div>
+              <h2 class="chapter-title">Dressing for the Ending You Want</h2>
+              <p class="chapter-lede">
+                By now, most regular raiders don’t just pick what looks cool –
+                they pick what produces the kinds of encounters they enjoy.
+              </p>
+              <div class="chapter-body">
+                <p>
+                  Some players deliberately equip “approachable” fits when
+                  they’re scouting routes, grinding quests or recording footage.
+                  Others lean into the opposite: full intimidation, loud
+                  colours, and silhouettes that say <em>don’t test me</em>.
+                </p>
+
+                <p>
+                  You can see this in YouTube guides that casually treat fashion
+                  as part of buildcraft: “How To Change Your Look in Arc
+                  Raiders” and “All Outfits &amp; Where To Get Them” sit
+                  alongside weapon breakdowns and map guides. Cosmetics aren’t
+                  just dress-ups – they’re tools in a social kit.
+                </p>
+
+                <p>
+                  For some, that means equipping a neutral coat to reduce the
+                  chance of being shot on sight. For others, it’s the opposite:
+                  wearing a notorious skin because they enjoy the way people
+                  snap to alert the moment they appear on a hillside.
+                </p>
+
+                <p>
+                  In either case, the logic is the same: look like the
+                  encounters you want to have. The game doesn’t enforce any of
+                  this. The players do.
+                </p>
+              </div>
+            </article>
+
+            <aside class="chapter-media">
+              <div class="chapter-media-inner">
+                <div class="chapter-embed">
+                  <div class="chapter-embed-frame">
+                    <iframe
+                      src="https://www.youtube.com/embed/6bLpQGt62iQ"
+                      title="How To Change Your Look In Arc Raiders"
+                      loading="lazy"
+                      allowfullscreen></iframe>
+                  </div>
+                  <div class="chapter-caption">
+                    <span class="label">Loadout Tooling</span>
+                    Customisation guides treat outfits like any other part of
+                    the build – a lever you pull to tilt the odds of how
+                    strangers will respond to you.
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </section>
+
+          <!-- 8. The Quiet Social Contract -->
+          <section
+            id="section-8"
+            class="chapter">
+            <article class="chapter-text">
+              <div class="chapter-kicker">08 // Soft Law</div>
+              <h2 class="chapter-title">
+                The Quiet Social Contract of ARC Raiders
+              </h2>
+              <p class="chapter-lede">
+                No clown suits, no neon mascots – just grounded sci-fi workwear
+                and the rules players have written on top of it.
+              </p>
+              <div class="chapter-body">
+                <p>
+                  Unlike a lot of live-service shooters, ARC Raiders keeps its
+                  cosmetics grounded: bomber jackets, flight suits, beat-up
+                  cowboy gear and scavenger rigs. There’s no obvious “joke” skin
+                  to deflate the mood.
+                </p>
+
+                <p>
+                  That restraint makes the soft rules matter more. When the
+                  difference between a friendly scav and a suspected brigand is
+                  a stripe of colour or a familiar silhouette, the social
+                  contract feels strangely fragile – and strangely powerful.
+                </p>
+
+                <p>
+                  At the same time, the game is exploding. By early November it
+                  had broken 460,000 concurrent players on Steam, with launch
+                  weekend Twitch viewership topping 374,000 and more than 35
+                  million hours watched. Every one of those players brings their
+                  own assumptions about what a coat or colour means.
+                </p>
+
+                <p>
+                  Which is how you end up with a frontier that feels oddly
+                  human. There are no written laws about what you should wear.
+                  But there are patterns, reputations, and expectations – and if
+                  you pay attention, your jacket can buy you a longer life than
+                  any extra plate of armour ever will.
+                </p>
+              </div>
+            </article>
+
+            <aside class="chapter-media">
+              <div class="chapter-media-inner">
+                <div class="chapter-embed">
+                  <div class="chapter-embed-frame">
+                    <iframe
+                      src="https://www.youtube.com/embed/9slTF7NJ7UI"
+                      title="ARC Raiders - Official Launch Trailer"
+                      loading="lazy"
+                      allowfullscreen></iframe>
+                  </div>
+                  <div class="chapter-caption">
+                    <span class="label">Big Picture</span>
+                    The launch trailer is full of the same grounded fits players
+                    are now arguing over: bomber jackets, space-age workwear,
+                    and coats that quietly decide who trusts you.
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </section>
+
+          <!-- Outro -->
+          <section class="outro">
+            <div class="byline">
+              FIELD NOTES FROM THE RUST BELT &nbsp;/&nbsp; FASHION, TRUST, AND
+              EXTRACTION
+            </div>
+            <p>
+              None of this is official. Nowhere in the menus does ARC Raiders
+              tell you that the jacket you’re about to equip will make half the
+              lobby flinch when they see you on a rooftop. But the community has
+              done what communities always do: it has taken a neutral system and
+              layered meaning on top.
+            </p>
+            <p>
+              Some of those meanings are generous – friendly fits, medic mains,
+              people who will walk past you and leave you to your raid. Others
+              are ruthless – try-hard uniforms, faction colours, streamer war
+              dress codes that put you on a kill list without your consent.
+            </p>
+            <p>
+              That’s the fun and the risk of a game that quietly lets clothes
+              matter. You can log in and dress like whoever you want. Just
+              remember: in ARC Raiders, your fashion builds a story around you
+              long before anyone pulls the trigger.
+            </p>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
