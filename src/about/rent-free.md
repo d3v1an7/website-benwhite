@@ -9,15 +9,18 @@ layout: page
 - [Difficult Conversations](https://app.thestorygraph.com/books/a71602ad-0a44-4d84-97ad-943edb7ab9ef)
 - [Extreme Ownership](https://app.thestorygraph.com/books/2f58d16f-8134-4e27-b34e-8e696e8a74f3)
 - [7 Habits](https://app.thestorygraph.com/books/307fe158-b901-4551-ac29-86f7cf6fcfde)
+- [Consequences of Capitalism](https://app.thestorygraph.com/books/da13c24f-d3ac-469c-8d68-750a44043bbc)
 - [The Psychology of Money](https://app.thestorygraph.com/books/971a7f7e-3b40-485c-9b92-9f43d9246c00)
 - [Dark Emu](https://app.thestorygraph.com/books/e50b4553-42c4-4b90-a570-034b35685fb8)
 
 ### Books (fiction)
 
-- [Southern Reach Trilogy](https://app.thestorygraph.com/books/7ec6605b-104e-43ec-8b2a-6cc32a3256d2)
+- [Southern Reach Trilogy](https://app.thestorygraph.com/books/7ec6605b-104e-43ec-8b2a-6cc32a3256d2), [Absolution](https://app.thestorygraph.com/books/7044d738-e39d-4cd8-8304-f06ee90b0d39)
 - [The Three-Body Problem: Remembrance of Earth's Past](https://app.thestorygraph.com/books/e48bb020-9c8a-480d-9e9f-9eab98075321)
 - [Tomorrow, and Tomorrow, and Tomorrow](https://app.thestorygraph.com/books/d57e098f-82dc-41f1-94f3-8fcb02dfab1b)
 - [Musashi](https://app.thestorygraph.com/books/e92da052-f353-4b18-b923-b4f841552545)
+- [There Is No Antimemetics Division](https://app.thestorygraph.com/books/107e6a7f-ed27-4a1d-a32b-aad0d6a2977b)
+- [Children of Time](https://app.thestorygraph.com/books/142bc3cb-3aac-49e5-8527-b3cc9675f158)
 
 ### Clips
 
