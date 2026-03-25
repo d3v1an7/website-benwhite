@@ -55,10 +55,7 @@ export const configFilters = {
             fontFamily: {
               mono: ['"JetBrains Mono"', ...defaultTheme.fontFamily.mono],
               sans: ['Inter', ...defaultTheme.fontFamily.sans],
-              citywide: [
-                '"Citywide Variable"',
-                ...defaultTheme.fontFamily.sans,
-              ],
+              citywide: ['Citywide', ...defaultTheme.fontFamily.sans],
             },
           },
         },
