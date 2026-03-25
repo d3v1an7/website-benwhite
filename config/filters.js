@@ -56,6 +56,10 @@ export const configFilters = {
               mono: ['"JetBrains Mono"', ...defaultTheme.fontFamily.mono],
               sans: ['Inter', ...defaultTheme.fontFamily.sans],
               citywide: ['Citywide', ...defaultTheme.fontFamily.sans],
+              citywidevariable: [
+                '"Citywide Variable"',
+                ...defaultTheme.fontFamily.sans,
+              ],
             },
           },
         },

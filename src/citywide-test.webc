@@ -1,0 +1,15 @@
+---
+layout: index
+title: Citywide Test
+standfirst: Just testing things.
+eleventyExcludeFromCollections: true
+nofollow: true
+---
+
+<section class="flex flex-col space-y-6">
+  <h1>Testing Citywide (WideMedium)</h1>
+  <h1
+    class="font-citywidevariable [font-variation-settings:'wght'_500,'wdth'_200]">
+    Testing Citywide (Variable)
+  </h1>
+</section>
