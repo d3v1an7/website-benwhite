@@ -24,15 +24,8 @@
   }
   @font-face {
     font-family: 'Citywide';
-    src: url('/Citywide-WideMedium.woff2') format('woff2');
+    src: url('/Citywide-Variable-v1.1.woff2') format('woff2');
     font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: 'Citywide Variable';
-    src: url('/Citywide-Variable.woff2') format('woff2');
-    font-weight: 100 900;
     font-style: normal;
     font-display: swap;
   }
@@ -46,6 +39,9 @@
   h5,
   h6 {
     @apply terminal:text-lime-400 terminal:font-mono font-citywide text-pretty text-xl/[1.8] uppercase tracking-wide text-stone-900 antialiased sm:text-2xl/[1.8] dark:text-stone-50;
+    font-variation-settings:
+      'wght' 500,
+      'wdth' 140;
   }
   h1,
   h2 {
