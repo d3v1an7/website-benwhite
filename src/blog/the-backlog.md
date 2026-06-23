@@ -40,7 +40,7 @@ The voice acting and writing is just [chef's kiss]. The combat ended up being...
 
 I don't really pay close attention to the discourse, but from what I could tell, [Mixtape](https://store.steampowered.com/app/2582320/Mixtape/) released to widespread critical acclaim, followed by a somewhat predictable backlash from the "Gamers".
 
-Knowledge of a backlash was nestled in my mind for my play through. I was sure I'd be able to spot the moment that the "Gamers" didn't like. As the credits rolled, I was like, what the hell? Why are people mad about this game? Then I went to sleep and the next day, and I listened to the Mixtape soundtrack (it's great). Turns out I'm not that interested in what the "Gamers" are angry about, I don't have space in my life for that nonsense.
+Knowledge of a backlash was nestled in my mind for my play through. I was sure I'd be able to spot the moment that the "Gamers" didn't like. As the credits rolled, I was like, what the hell? Why are people mad about this game? I went to sleep, and the next day I listened to the Mixtape soundtrack (it's great). Turns out I'm not that interested in what the "Gamers" are angry about. I don't have space in my life for that nonsense.
 
 Was the game life changing? Not really! The main character is kinda annoying and pretentious, like, uh, I was? When I was a teenager? The friend group dynamic looks pretty straightforward on the surface, but body language shows it isn't. And I really like how sometimes, the game isn't interested in going into any of that (sorry Slater).
 
