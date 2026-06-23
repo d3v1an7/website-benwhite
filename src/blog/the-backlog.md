@@ -1,7 +1,7 @@
 ---
 title: Getting through the backlog
 standfirst: The video games are good.
-date: 2025-08-04
+date: 2026-06-23
 tags:
   - games
 ---
@@ -16,21 +16,25 @@ My one-game policy is like any good policy, it's a rough guideline. Here are the
 
 [Arc Raiders](https://store.steampowered.com/app/1808500/ARC_Raiders/) was my overtime for a while. Everyone goes to sleep, it's Arc Raiders time. Stratospheric highs and the deepest, darkest lows. Every interaction a dance.
 
-I like to _think_ I'm pragmatic and principled, but Arc Raiders made me question that self truth. I see myself as a friendly raider! Sure, I'm here for me, but also for you. We're in this together. But after getting shot in the back a few times... sorry friend, turns out I'm not feeling very friendly any more.
+I like to _think_ I'm [pragmatic and principled](/blog/first-principles/), but Arc Raiders made me question that self truth. I see myself as a friendly raider! Sure, I'm here for me, but also for you. We're in this together. But after getting shot in the back a few times... sorry friend, turns out I'm not feeling very friendly any more.
 
 The game feels different these days -- the magic is still there -- but the racists, sociopaths and cheaters have well and truly arrived. So I stopped playing.
+
+---
 
 ### Clair Obscur: Expedition 33
 
 I'm pretty sure [Clair Obscur: Expedition 33](https://store.steampowered.com/app/1903340/Clair_Obscur_Expedition_33/) basically won every "Game of the year" award when it came out. It was hard to not hear good things, but all I knew going in was "cool game by small French team".
 
-Within the first few minutes I was like: "Oh my, yes, this is absolutely the most French game I've ever played". I switched to French voice acting, for the complete experience.
+Within the first few minutes I was like: "Oh my, yes, this is absolutely the most French game I've ever played" and switched to French voice acting, for the complete experience.
 
 When the first combat tutorial popped up I closed my eyes and sighed. Turn based? Thanks, I hate it. But I persevered, and boy, did that pay off.
 
 Clair Obscur: Expedition 33 is a complex, layered, superbly written and beautifully realised story about grief.
 
 The voice acting and writing is just [chef's kiss]. The combat ended up being... really fun!?? I ended up with around 40 hours under my belt, did the main story and team side missions. It felt like the game had a lot more to give, but I was ready to move on.
+
+---
 
 ### Mixtape
 
@@ -41,6 +45,8 @@ Knowledge of a backlash was nestled in my mind for my play through. I was sure I
 Was the game life changing? Not really! The main character is kinda annoying, like, uh, I was? When I was a teenager? The friend group dynamic looks pretty straightforward on the surface, but body language shows it isn't. And I really like how, sometimes, the game isn't interested in going into any of that (sorry Slater).
 
 At some point, you end up drunk in a Blockbuster. The mission: pick out a few movies and get back to the car. At this point I was still playing the game like how I've been trained. Get task, do task, get reward. But as I'm stumbling through the store I bump into a shelf and tapes go flying. Finally! It only took half the bloody game, but finally, I got it. Yes! You _can_ carefully walk in, pick the videos and move onto the next scene, but you'd be missing the entire point. You are a drunk teenager in a video store. The point is chaos! Teenage angst and confusion, rage and joy: The Video Game. After this, I started to really appreciate Mixtape a lot. I might not play it again, but that's okay. I loved my handful of hours with it.
+
+---
 
 The backlog is a little smaller, my heart a little more full.
 
